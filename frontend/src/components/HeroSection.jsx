@@ -5,18 +5,13 @@ import { ArrowRight } from 'lucide-react';
 const HeroSection = () => {
   return (
     <div className="h-screen flex flex-col overflow-hidden">
-      {/* Background Gradient */}
+      {/* Background Image */}
       <div className="absolute inset-0" style={{
-        background: 'linear-gradient(180deg, #A891E8 0%, #8B6FD9 100%)'
+        backgroundImage: 'url(https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/7s586880_Gemini_Generated_Image_l7k95nl7k95nl7k9.png)',
+        backgroundSize: 'auto 100%',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat'
       }}>
-        {/* Background Illustration */}
-        <div className="absolute inset-0 opacity-60">
-          <img 
-            src="https://customer-assets.emergentagent.com/job_adcb6dde-669b-4845-8137-9955e5fecf88/artifacts/luwk62at_ChatGPT%20Image%20Sep%2028%2C%202025%2C%2008_20_46%20PM.png" 
-            alt="Wardrobe Background" 
-            className="w-full h-full object-cover object-center"
-          />
-        </div>
       </div>
       
       {/* Hero Card */}
