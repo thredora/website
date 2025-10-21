@@ -67,19 +67,25 @@ const Navigation = () => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="bg-white/95 backdrop-blur-lg rounded-full p-3 shadow-lg border border-white/20 animate-slideFromTop"
         >
-          {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {isMenuOpen ? (
+            <img 
+              src="https://customer-assets.emergentagent.com/job_adcb6dde-669b-4845-8137-9955e5fecf88/artifacts/obc3uawj_New%20Logo.png" 
+              alt="Thredora Logo" 
+              className="h-6 w-6 rounded-md shadow-sm"
+            />
+          ) : (
+            <Menu className="w-6 h-6" />
+          )}
         </button>
         
         {/* Mobile Dropdown Menu */}
         {isMenuOpen && (
           <div className="absolute top-16 right-0 bg-white/95 backdrop-blur-lg rounded-2xl p-4 shadow-xl border border-white/20 min-w-48">
             <div className="flex flex-col space-y-4">
-              <a href="/" className="flex items-center justify-center p-2">
-                <img 
-                  src="https://customer-assets.emergentagent.com/job_adcb6dde-669b-4845-8137-9955e5fecf88/artifacts/obc3uawj_New%20Logo.png" 
-                  alt="Thredora Logo" 
-                  className="h-8 w-8 rounded-md shadow-sm"
-                />
+              <a href="/" className="text-gray-600 hover:text-purple-700 transition-colors duration-300 font-medium text-center py-2" style={{
+                fontFamily: 'Libre Caslon Text, serif'
+              }}>
+                Home
               </a>
               <a href="#how-it-works" className="text-gray-600 hover:text-purple-700 transition-colors duration-300 font-medium text-center py-2" style={{
                 fontFamily: 'Libre Caslon Text, serif'
@@ -91,12 +97,12 @@ const Navigation = () => {
               }}>
                 Pricing
               </a>
-              <a href="#wardrobe" className="text-gray-600 hover:text-purple-700 transition-colors duration-300 font-medium text-center py-2" style={{
+              <a href="#wardrobe" className="text-gray-600 hover:text-purple-700 transition-colors duration-300 font-medium text-center py-2 mb-2" style={{
                 fontFamily: 'Libre Caslon Text, serif'
               }}>
                 My Wardrobe
               </a>
-              <Button className="bg-gradient-to-r from-yellow-400 to-lime-400 hover:from-yellow-500 hover:to-lime-500 text-gray-800 font-medium px-4 py-2 rounded-full transition-all duration-300 hover:scale-105 shadow-lg" style={{
+              <Button className="bg-gradient-to-r from-yellow-400 to-lime-400 hover:from-yellow-500 hover:to-lime-500 text-gray-800 font-medium px-4 py-2 rounded-full transition-all duration-300 hover:scale-105 shadow-lg mt-2" style={{
                 fontFamily: 'Libre Caslon Text, serif'
               }}>
                 Sign Up
