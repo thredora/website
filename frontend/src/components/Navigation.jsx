@@ -3,7 +3,7 @@ import { Button } from './ui/button';
 
 const Navigation = () => {
   return (
-    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 px-4">
+    <nav className="fixed top-4 left-1/2 z-50 px-4" style={{ transform: 'translateX(-50%)' }}>
       <div className="bg-white/95 backdrop-blur-lg rounded-full px-4 py-2 shadow-lg border border-white/20 animate-slideFromTop" style={{
         width: '50vw',
         maxWidth: '800px',
