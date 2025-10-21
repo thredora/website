@@ -2,7 +2,9 @@
 
 .App {
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Libre Caslon Text', serif;
 }
 
 /* Hero section gradient background */
@@ -18,10 +20,11 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Hero card styling */
+/* Hero card styling - semi-transparent white */
 .hero-card {
-    background: linear-gradient(135deg, #FFFFFF 0%, #F5F3F9 100%);
-    box-shadow: 0 20px 60px rgba(139, 111, 217, 0.15);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 /* CTA button gradient */
@@ -35,13 +38,9 @@
     box-shadow: 0 12px 32px rgba(244, 232, 109, 0.4);
 }
 
-/* Typography classes */
+/* Typography classes - all serif */
 .serif-font {
-    font-family: 'Playfair Display', serif;
-}
-
-.sans-font {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Libre Caslon Text', serif;
 }
 
 /* Decorative wave animations */
@@ -54,7 +53,7 @@
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-5px);
     }
 }
 
@@ -65,50 +64,51 @@
     background-repeat: no-repeat;
 }
 
-@media (max-width: 768px) {
-    .bg-responsive {
-        background-size: contain;
-        background-position: center bottom;
-    }
-}
-
 /* Mobile navigation adjustments */
 @media (max-width: 768px) {
     .nav-glass {
-        padding: 0.75rem 1.5rem;
+        padding: 0.5rem 1rem;
     }
     
     .hero-card {
-        padding: 2rem;
+        padding: 1.5rem;
         margin: 1rem;
     }
 }
 
 /* Hover effects */
 .nav-link:hover {
-    color: #8B6FD9;
-    transform: translateY(-2px);
+    color: #7C60C7;
+    transform: translateY(-1px);
 }
 
 /* Focus accessibility */
 .focus-visible:focus {
-    outline: 2px solid #F4E86D;
+    outline: 2px solid #ABA728;
     outline-offset: 2px;
     border-radius: 4px;
 }
 
-/* Loading animation for images */
-.image-loading {
-    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-    background-size: 200% 100%;
-    animation: loading 1.5s infinite;
+/* Ensure everything uses serif font */
+* {
+    font-family: 'Libre Caslon Text', serif !important;
 }
 
-@keyframes loading {
-    0% {
-        background-position: 200% 0;
-    }
-    100% {
-        background-position: -200% 0;
-    }
+/* Color classes for easy reference */
+.text-thredora-purple {
+    color: #7C60C7;
+}
+
+.text-thredora-lime {
+    color: #ABA728;
+}
+
+.text-thredora-gray {
+    color: #525A71;
+}
+
+/* Prevent any scrolling */
+html, body, #root {
+    height: 100vh;
+    overflow: hidden;
 }

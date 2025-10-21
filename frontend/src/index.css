@@ -2,25 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+/* Import Google Fonts - Libre Caslon Text */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
 
 body {
     margin: 0;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
+    font-family: 'Libre Caslon Text', serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
+    overflow: hidden; /* Prevent scrolling */
+    height: 100vh;
+}
+
+html {
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+#root {
+    height: 100vh;
+    overflow: hidden;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+    font-family: 'Libre Caslon Text', serif;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar (in case needed) */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -46,14 +54,14 @@ code {
 
 /* Focus styles for accessibility */
 *:focus {
-    outline: 2px solid #F4E86D;
+    outline: 2px solid #ABA728;
     outline-offset: 2px;
 }
 
 /* Selection styles */
 ::selection {
-    background-color: #F4E86D;
-    color: #4A4A4A;
+    background-color: #ABA728;
+    color: #FFFFFF;
 }
 
 @layer base {
@@ -143,4 +151,15 @@ code {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Ensure no scrolling anywhere */
+.App {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* All text should use serif font */
+* {
+    font-family: 'Libre Caslon Text', serif !important;
 }
