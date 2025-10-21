@@ -120,7 +120,7 @@ const HeroSection = () => {
         </div>
         
         {/* Bottom Decorative Wave */}
-        <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 rotate-180">
+        <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 rotate-180 animate-float" style={{ animationDelay: '0.5s' }}>
           <svg width="150" height="40" viewBox="0 0 150 40" className="text-purple-400 opacity-50">
             <path 
               d="M10 20 Q 40 10 75 20 T 140 20" 
