@@ -74,6 +74,14 @@
         padding: 1.5rem;
         margin: 1rem;
     }
+    
+    /* Mobile text box adjustments */
+    .mobile-text-box {
+        max-width: 95vw !important;
+        width: 95vw !important;
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
 }
 
 /* Hover effects */
