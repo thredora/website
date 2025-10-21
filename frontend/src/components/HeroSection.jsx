@@ -20,10 +20,10 @@ const HeroSection = () => {
       </div>
       
       {/* Hero Card */}
-      <div className="relative z-10 flex-1 flex items-center justify-center px-4 md:px-6 py-20">
-        <div className="rounded-3xl p-6 md:p-10 w-full max-w-[95vw] md:max-w-4xl animate-fadeInUp" style={{
+      <div className="relative z-10 flex-1 flex items-center justify-center px-4 md:px-6 py-8 md:py-20">
+        <div className="rounded-3xl p-6 md:p-10 md:pb-16 w-full max-w-[95vw] md:max-w-4xl animate-fadeInUp" style={{
           backgroundColor: 'rgba(255, 255, 255, 0.80)',
-          maxHeight: '70vh',
+          maxHeight: '75vh',
           boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)'
         }}>
         {/* Decorative Wave SVG */}
