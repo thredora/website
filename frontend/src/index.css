@@ -211,12 +211,16 @@ code {
     animation: fadeInUp 1s ease-out;
 }
 
-.animate-slideDown {
-    animation: slideDown 0.8s ease-out;
+.animate-slideFromTop {
+    animation: slideFromTop 1s ease-out;
 }
 
 .animate-bounce-slow {
     animation: bounceSlow 3s ease-in-out infinite;
+}
+
+.animate-bounce-elegant {
+    animation: bounceElegant 6s ease-in-out infinite;
 }
 
 .animate-bounce-subtle {
