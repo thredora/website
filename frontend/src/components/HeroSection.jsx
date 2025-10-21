@@ -28,7 +28,7 @@ const HeroSection = () => {
           boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)'
         }}>
         {/* Decorative Wave SVG */}
-        <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
+        <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 animate-float">
           <svg width="150" height="40" viewBox="0 0 150 40" className="text-purple-400 opacity-50">
             <path 
               d="M10 20 Q 40 10 75 20 T 140 20" 
@@ -37,6 +37,17 @@ const HeroSection = () => {
               fill="none"
             />
           </svg>
+        </div>
+        
+        {/* Floating Sparkles */}
+        <div className="absolute top-4 right-8 animate-bounce-slow">
+          <div className="w-2 h-2 bg-yellow-400 rounded-full opacity-70"></div>
+        </div>
+        <div className="absolute top-12 left-8 animate-pulse-slow">
+          <div className="w-1.5 h-1.5 bg-purple-400 rounded-full opacity-60"></div>
+        </div>
+        <div className="absolute bottom-8 right-12 animate-float" style={{ animationDelay: '1s' }}>
+          <div className="w-2.5 h-2.5 bg-lime-400 rounded-full opacity-50"></div>
         </div>
         
         {/* Thredora Header Image */}
