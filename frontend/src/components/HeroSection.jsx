@@ -99,12 +99,12 @@ const HeroSection = () => {
         </div>
         
         {/* CTA Button */}
-        <div className="text-center">
-          <Button className="bg-gradient-to-r from-yellow-400 to-lime-400 hover:from-yellow-500 hover:to-lime-500 text-gray-800 text-lg font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-xl flex items-center gap-2 mx-auto group" style={{
+        <div className="text-center mt-6">
+          <Button className="bg-gradient-to-r from-yellow-400 to-lime-400 hover:from-yellow-500 hover:to-lime-500 text-gray-800 text-lg font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:scale-110 shadow-xl flex items-center gap-2 mx-auto group animate-bounce-subtle hover:shadow-2xl" style={{
             fontFamily: 'Libre Caslon Text, serif'
           }}>
             Let's Get Started
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
           </Button>
         </div>
         
