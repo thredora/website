@@ -41,6 +41,10 @@ const HeroSection = () => {
             src="https://customer-assets.emergentagent.com/job_dress-effortless/artifacts/g5mqymry_Header.png" 
             alt="Thredora" 
             className="mx-auto max-w-xs md:max-w-sm h-auto"
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.src = "https://customer-assets.emergentagent.com/job_adcb6dde-669b-4845-8137-9955e5fecf88/artifacts/bsko3o3a_Header.png";
+            }}
           />
         </div>
         
