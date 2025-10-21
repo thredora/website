@@ -62,7 +62,7 @@ const HeroSection = () => {
             fontFamily: 'Libre Caslon Text, serif'
           }}>
             <span style={{ color: '#7C60C7' }}>What if getting dressed was </span>
-            <span style={{ color: '#F4D03F' }} className="font-semibold">effortless</span><span style={{ color: '#7C60C7' }}>,</span>
+            <span style={{ color: '#E6B800' }} className="font-semibold animate-pulse-slow">effortless</span><span style={{ color: '#7C60C7' }}>,</span>
           </h2>
           <h2 className="text-2xl md:text-3xl lg:text-4xl leading-tight" style={{
             fontFamily: 'Libre Caslon Text, serif',
