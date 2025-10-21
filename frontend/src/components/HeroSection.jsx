@@ -55,7 +55,7 @@ const HeroSection = () => {
           <img 
             src="https://customer-assets.emergentagent.com/job_dress-effortless/artifacts/p6w98td7_Header%20%281%29.png" 
             alt="Thredora" 
-            className="mx-auto h-auto animate-bounce-slow"
+            className="mx-auto h-auto animate-bounce-elegant"
             style={{
               maxWidth: '320px',
               width: '80%'
