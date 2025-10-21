@@ -68,13 +68,13 @@ const HeroSection = () => {
         
         {/* Main Headline */}
         <div className="text-center mb-6">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl leading-tight" style={{
+          <h2 className="text-3xl md:text-3xl lg:text-4xl leading-tight" style={{
             fontFamily: 'Libre Caslon Text, serif'
           }}>
             <span style={{ color: '#7C60C7' }}>What if getting dressed was </span>
             <span style={{ color: '#E6B800' }} className="font-semibold animate-pulse-slow">effortless</span><span style={{ color: '#7C60C7' }}>,</span>
           </h2>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl leading-tight" style={{
+          <h2 className="text-3xl md:text-3xl lg:text-4xl leading-tight" style={{
             fontFamily: 'Libre Caslon Text, serif',
             color: '#525A71'
           }}>
