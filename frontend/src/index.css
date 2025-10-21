@@ -144,11 +144,11 @@ code {
 @keyframes slideFromTop {
     from {
         opacity: 0;
-        transform: translate(-50%, -30px);
+        transform: translateY(-30px);
     }
     to {
         opacity: 1;
-        transform: translate(-50%, 0);
+        transform: translateY(0);
     }
 }
 
