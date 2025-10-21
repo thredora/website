@@ -25,6 +25,14 @@
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+}
+
+/* Ensure text box has rounded corners and padding */
+.text-container {
+    border-radius: 1.5rem !important;
+    padding: 2rem !important;
 }
 
 /* CTA button gradient */
