@@ -114,6 +114,7 @@ const HeroSection = () => {
             />
           </svg>
         </div>
+        </div>
       </div>
     </div>
   );
