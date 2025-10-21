@@ -141,10 +141,10 @@ code {
     }
 }
 
-@keyframes slideDown {
+@keyframes slideFromTop {
     from {
         opacity: 0;
-        transform: translate(-50%, -20px);
+        transform: translate(-50%, -30px);
     }
     to {
         opacity: 1;
@@ -161,6 +161,18 @@ code {
     }
     60% {
         transform: translateY(-5px);
+    }
+}
+
+@keyframes bounceElegant {
+    0%, 85%, 100% {
+        transform: translateY(0);
+    }
+    42% {
+        transform: translateY(-8px);
+    }
+    70% {
+        transform: translateY(-2px);
     }
 }
 
