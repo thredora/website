@@ -93,7 +93,7 @@ const HeroSection = () => {
             color: '#525A71'
           }}>
             Turn Your Wardrobe Into{' '}
-            <span style={{ color: '#F4D03F' }} className="font-semibold">Endless</span>{' '}
+            <span style={{ color: '#E6B800' }} className="font-semibold animate-pulse-slow">Endless</span>{' '}
             Possibilities
           </p>
         </div>
