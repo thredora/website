@@ -2,8 +2,8 @@
 
 .App {
     position: relative;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow-x: hidden;
     font-family: 'Libre Caslon Text', serif;
 }
 
