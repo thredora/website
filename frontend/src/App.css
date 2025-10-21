@@ -96,6 +96,17 @@
     .rounded-3xl {
         border-radius: 1.5rem !important;
     }
+    
+    /* Mobile hero section centering */
+    .mobile-hero-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
 }
 
 /* Hover effects */
