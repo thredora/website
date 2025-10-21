@@ -139,8 +139,9 @@
     color: #525A71;
 }
 
-/* Prevent any scrolling */
+/* Allow vertical scrolling, prevent horizontal scrolling */
 html, body, #root {
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
