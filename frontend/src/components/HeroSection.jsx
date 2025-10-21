@@ -39,14 +39,14 @@ const HeroSection = () => {
         </div>
         
         {/* Thredora Header Image */}
-        <div className="text-center mb-6">
+        <div className="text-center mb-4">
           <img 
-            src="https://customer-assets.emergentagent.com/job_dress-effortless/artifacts/g5mqymry_Header.png" 
+            src="https://customer-assets.emergentagent.com/job_dress-effortless/artifacts/p6w98td7_Header%20%281%29.png" 
             alt="Thredora" 
-            className="mx-auto max-w-xs md:max-w-sm h-auto"
+            className="mx-auto max-w-sm md:max-w-md h-auto"
             onError={(e) => {
               e.target.onerror = null;
-              e.target.src = "https://customer-assets.emergentagent.com/job_adcb6dde-669b-4845-8137-9955e5fecf88/artifacts/bsko3o3a_Header.png";
+              e.target.src = "https://customer-assets.emergentagent.com/job_dress-effortless/artifacts/g5mqymry_Header.png";
             }}
           />
         </div>
