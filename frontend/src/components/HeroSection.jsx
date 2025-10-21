@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <div className="h-screen flex items-center justify-center px-6 overflow-hidden">
+    <div className="h-screen flex flex-col overflow-hidden">
       {/* Background Gradient */}
       <div className="absolute inset-0" style={{
         background: 'linear-gradient(180deg, #A891E8 0%, #8B6FD9 100%)'
@@ -20,9 +20,12 @@ const HeroSection = () => {
       </div>
       
       {/* Hero Card */}
-      <div className="relative z-10 rounded-3xl p-8 md:p-12 max-w-3xl mx-auto" style={{
-        backgroundColor: 'rgba(255, 255, 255, 0.85)'
-      }}>
+      <div className="relative z-10 flex-1 flex items-center justify-center px-6 py-20">
+        <div className="rounded-2xl p-6 md:p-10 max-w-4xl w-full" style={{
+          backgroundColor: 'rgba(255, 255, 255, 0.75)',
+          maxHeight: '70vh',
+          maxWidth: '70vw'
+        }}>
         {/* Decorative Wave SVG */}
         <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
           <svg width="150" height="40" viewBox="0 0 150 40" className="text-purple-400 opacity-50">
