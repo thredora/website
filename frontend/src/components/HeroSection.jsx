@@ -21,12 +21,11 @@ const HeroSection = () => {
       
       {/* Hero Card */}
       <div className="relative z-10 flex-1 flex items-center justify-center px-4 md:px-6 py-20">
-        <div className="rounded-3xl p-4 md:p-10 w-full animate-fadeInUp" style={{
+        <div className="rounded-3xl p-6 md:p-10 w-full max-w-[95vw] md:max-w-4xl animate-fadeInUp" style={{
           backgroundColor: 'rgba(255, 255, 255, 0.80)',
           maxHeight: '70vh',
-          maxWidth: '95vw',
           boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)'
-        }} className="md:max-w-4xl md:w-auto">
+        }}>
         {/* Decorative Wave SVG */}
         <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 animate-float">
           <svg width="150" height="40" viewBox="0 0 150 40" className="text-purple-400 opacity-50">
