@@ -44,7 +44,11 @@ const HeroSection = () => {
           <img 
             src="https://customer-assets.emergentagent.com/job_dress-effortless/artifacts/p6w98td7_Header%20%281%29.png" 
             alt="Thredora" 
-            className="mx-auto max-w-sm md:max-w-md h-auto"
+            className="mx-auto h-auto animate-bounce-slow"
+            style={{
+              maxWidth: '320px',
+              width: '80%'
+            }}
             onError={(e) => {
               e.target.onerror = null;
               e.target.src = "https://customer-assets.emergentagent.com/job_dress-effortless/artifacts/g5mqymry_Header.png";
