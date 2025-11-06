@@ -7,7 +7,7 @@ const HeroSection = () => {
     <div className="h-screen flex flex-col overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0" style={{
-        backgroundImage: 'url(https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/7s586880_Gemini_Generated_Image_l7k95nl7k95nl7k9.png)',
+        backgroundImage: 'url(https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/x4kzk0lm_new%20bg.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat'
