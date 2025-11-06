@@ -18,8 +18,8 @@ const HeroSection = () => {
       <div className="relative z-10 flex-1 flex items-start md:items-center justify-center px-4 md:px-6 pt-20 md:py-20">
         <div className="rounded-3xl p-6 md:p-10 md:pb-16 w-full max-w-[95vw] md:max-w-4xl animate-fadeInUp" style={{
           backgroundColor: 'rgba(255, 255, 255, 0.80)',
-          backdropFilter: 'blur(16px)',
-          WebkitBackdropFilter: 'blur(16px)',
+          backdropFilter: 'blur(10px)',
+          WebkitBackdropFilter: 'blur(10px)',
           maxHeight: '75vh',
           boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)'
         }}>
