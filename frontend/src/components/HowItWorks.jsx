@@ -16,8 +16,9 @@ const HowItWorks = () => {
           
           {/* Perfectly circular blue bubble behind "perfect outfit" */}
           <span className="relative inline-block mx-2 md:mx-4 my-1 md:my-2">
+            {/* Mobile bubble */}
             <span 
-              className="absolute animate-pulse-slow"
+              className="absolute animate-pulse-slow md:hidden"
               style={{
                 width: '160px',
                 height: '160px',
@@ -29,6 +30,7 @@ const HowItWorks = () => {
                 transform: 'translate(-50%, -50%)'
               }}
             ></span>
+            {/* Desktop bubble */}
             <span 
               className="absolute animate-pulse-slow hidden md:block"
               style={{
