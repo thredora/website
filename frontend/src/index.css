@@ -244,6 +244,10 @@ code {
     animation: bubbleFloat 4s ease-in-out infinite;
 }
 
+.bubble-float {
+    animation: bubbleFloat 4s ease-in-out infinite;
+}
+
     animation: slideInFromRight 0.8s ease-out;
 }
 
