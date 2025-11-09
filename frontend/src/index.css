@@ -10,18 +10,17 @@ body {
     font-family: 'Libre Caslon Text', serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow: hidden; /* Prevent scrolling */
-    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 html {
-    height: 100vh;
-    overflow: hidden; /* Prevent scrolling */
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 #root {
-    height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 code {
