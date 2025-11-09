@@ -110,7 +110,7 @@ const HowItWorks = () => {
       </div>
 
       {/* Mobile: Overlaying Images with Scroll */}
-      <div className="md:hidden relative w-full max-w-md mx-auto" style={{ minHeight: '600px', position: 'relative', zIndex: 10 }}>
+      <div className="md:hidden relative w-full max-w-md mx-auto mb-8" style={{ minHeight: '600px', position: 'relative', zIndex: 10 }}>
         {/* Image 1 - Base layer */}
         <div 
           className="absolute inset-0 flex justify-center items-start transition-opacity duration-500"
@@ -155,9 +155,6 @@ const HowItWorks = () => {
           />
         </div>
       </div>
-
-      {/* Spacer for mobile scroll - minimal */}
-      <div className="md:hidden h-[150px]"></div>
     </section>
   );
 };
