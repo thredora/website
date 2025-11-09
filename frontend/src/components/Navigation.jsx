@@ -5,6 +5,10 @@ import { Menu, X } from 'lucide-react';
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
       {/* Desktop Navigation */}
