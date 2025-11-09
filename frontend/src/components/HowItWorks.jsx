@@ -8,10 +8,15 @@ const HowItWorks = () => {
       const section = document.getElementById('how-it-works');
       if (section) {
         const rect = section.getBoundingClientRect();
-        const sectionHeight = rect.height;
-        const scrolled = -rect.top;
-        const progress = Math.max(0, Math.min(1, scrolled / (sectionHeight * 0.7)));
-        setScrollProgress(progress);
+        const windowHeight = window.innerHeight;
+        
+        // Start showing images when section enters viewport
+        if (rect.top < windowHeight) {
+          const sectionHeight = rect.height;
+          const scrolled = windowHeight - rect.top;
+          const progress = Math.max(0, Math.min(1, scrolled / sectionHeight));
+          setScrollProgress(progress);
+        }
       }
     };
 
@@ -21,9 +26,9 @@ const HowItWorks = () => {
   }, []);
 
   // Calculate which images should be visible on mobile based on scroll
-  const image1Visible = scrollProgress > 0;
-  const image2Progress = Math.max(0, Math.min(1, (scrollProgress - 0.3) / 0.3));
-  const image3Progress = Math.max(0, Math.min(1, (scrollProgress - 0.6) / 0.3));
+  const image1Visible = scrollProgress > 0.1;
+  const image2Progress = Math.max(0, Math.min(1, (scrollProgress - 0.25) / 0.25));
+  const image3Progress = Math.max(0, Math.min(1, (scrollProgress - 0.5) / 0.25));
 
   return (
     <section 
