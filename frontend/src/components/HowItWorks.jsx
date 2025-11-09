@@ -10,23 +10,26 @@ const HowItWorks = () => {
       }}
     >
       {/* Main Title */}
-      <div className="max-w-6xl mx-auto text-center mb-16 md:mb-20">
-        <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif leading-tight relative inline-block">
+      <div className="max-w-6xl mx-auto text-center mb-16 md:mb-20 px-4">
+        <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif leading-tight">
           <span style={{ color: '#6A4EB6' }}>From cluttered closet to </span>
           
-          {/* Blue bubble behind "perfect outfit" */}
-          <span className="relative inline-block mx-2">
+          {/* Blue bubble behind "perfect outfit" - responsive positioning */}
+          <span className="relative inline-block mx-1 md:mx-2">
             <span 
-              className="absolute inset-0 transform -translate-x-4 -translate-y-2 animate-pulse-slow"
+              className="absolute animate-pulse-slow"
               style={{
-                width: '120%',
-                height: '140%',
+                width: '140%',
+                height: '160%',
                 backgroundColor: '#91C5FF',
                 borderRadius: '50%',
-                zIndex: 0
+                zIndex: 0,
+                left: '50%',
+                top: '50%',
+                transform: 'translate(-50%, -50%)'
               }}
             ></span>
-            <span className="relative z-10" style={{ color: '#FFFFFF' }}>perfect outfit</span>
+            <span className="relative z-10 px-2" style={{ color: '#FFFFFF' }}>perfect outfit</span>
           </span>
           
           <span style={{ color: '#6A4EB6' }}> in 3 steps</span>
