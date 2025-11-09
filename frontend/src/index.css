@@ -150,12 +150,18 @@ code {
         transform: translateX(0);
     }
 
-@keyframes bubblePulse {
+@keyframes bubbleFloat {
     0%, 100% {
         transform: translate(-50%, -50%) scale(1);
     }
+    25% {
+        transform: translate(-50%, -55%) scale(0.95);
+    }
     50% {
         transform: translate(-50%, -50%) scale(0.92);
+    }
+    75% {
+        transform: translate(-50%, -45%) scale(0.95);
     }
 }
 
