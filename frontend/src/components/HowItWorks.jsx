@@ -11,20 +11,20 @@ const HowItWorks = () => {
     >
       {/* Main Title */}
       <div className="max-w-6xl mx-auto text-center mb-16 md:mb-20 px-4">
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-relaxed">
-          <span style={{ color: '#5B3A9E' }}>From cluttered closet to </span>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-relaxed">
+          <span style={{ color: '#5B3A9E' }}>From cluttered closet to</span>{' '}
           
           {/* Perfectly circular blue bubble behind "perfect outfit" */}
-          <span className="relative inline-block mx-2 md:mx-4 my-1 md:my-2">
+          <span className="relative inline-block mx-1 md:mx-2">
             {/* Mobile bubble */}
             <span 
-              className="absolute animate-pulse-slow md:hidden"
+              className="absolute md:hidden animate-bubble-pulse"
               style={{
-                width: '160px',
-                height: '160px',
+                width: '200px',
+                height: '200px',
                 backgroundColor: '#91C5FF',
                 borderRadius: '50%',
-                zIndex: -1,
+                zIndex: 1,
                 left: '50%',
                 top: '50%',
                 transform: 'translate(-50%, -50%)'
@@ -32,22 +32,21 @@ const HowItWorks = () => {
             ></span>
             {/* Desktop bubble */}
             <span 
-              className="absolute animate-pulse-slow hidden md:block"
+              className="absolute hidden md:block animate-bubble-pulse"
               style={{
-                width: '280px',
-                height: '280px',
+                width: '260px',
+                height: '260px',
                 backgroundColor: '#91C5FF',
                 borderRadius: '50%',
-                zIndex: -1,
+                zIndex: 1,
                 left: '50%',
                 top: '50%',
                 transform: 'translate(-50%, -50%)'
               }}
             ></span>
-            <span className="relative z-10 px-2 whitespace-nowrap" style={{ color: '#FFFFFF' }}>perfect outfit</span>
+            <span className="relative z-10 px-2" style={{ color: '#FFFFFF' }}>perfect outfit</span>
           </span>
-          
-          <span style={{ color: '#5B3A9E' }}> in 3 steps</span>
+          {' '}<span style={{ color: '#5B3A9E' }}>in 3 steps</span>
         </h2>
       </div>
 
