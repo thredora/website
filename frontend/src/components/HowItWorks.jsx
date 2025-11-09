@@ -156,8 +156,8 @@ const HowItWorks = () => {
         </div>
       </div>
 
-      {/* Spacer for mobile scroll - reduced */}
-      <div className="md:hidden h-[400px]"></div>
+      {/* Spacer for mobile scroll - minimal */}
+      <div className="md:hidden h-[150px]"></div>
     </section>
   );
 };
