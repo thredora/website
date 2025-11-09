@@ -87,7 +87,7 @@ const HowItWorks = () => {
           <img 
             src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/0ogs0ou6_1-%20HIW.png"
             alt="Step 1 - Upload Your Wardrobe"
-            className="w-full h-auto rounded-2xl shadow-xl"
+            className="w-full h-auto rounded-2xl shadow-xl active:scale-95 transition-transform duration-200"
           />
         </div>
 
@@ -96,7 +96,7 @@ const HowItWorks = () => {
           <img 
             src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/dslyh2yk_2-%20HIW.png"
             alt="Step 2 - Chat With Thread"
-            className="w-full h-auto rounded-2xl shadow-xl"
+            className="w-full h-auto rounded-2xl shadow-xl active:scale-95 transition-transform duration-200"
           />
         </div>
 
@@ -105,7 +105,7 @@ const HowItWorks = () => {
           <img 
             src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/bhu88p5s_3-%20HIW.png"
             alt="Step 3 - Step Out In Style"
-            className="w-full h-auto rounded-2xl shadow-xl"
+            className="w-full h-auto rounded-2xl shadow-xl active:scale-95 transition-transform duration-200"
           />
         </div>
       </div>
