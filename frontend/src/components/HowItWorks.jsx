@@ -11,17 +11,17 @@ const HowItWorks = () => {
     >
       {/* Main Title */}
       <div className="max-w-6xl mx-auto text-center mb-16 md:mb-20 px-4">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-relaxed">
-          <span style={{ color: '#5B3A9E' }}>From cluttered closet to</span>{' '}
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-relaxed" style={{ position: 'relative', zIndex: 10 }}>
+          <span style={{ color: '#5B3A9E', position: 'relative', zIndex: 10 }}>From cluttered closet to</span>{' '}
           
           {/* Perfectly circular blue bubble behind "perfect outfit" */}
-          <span className="relative inline-block mx-1 md:mx-2">
+          <span className="relative inline-block mx-1 md:mx-2" style={{ zIndex: 5 }}>
             {/* Mobile bubble */}
             <span 
               className="absolute md:hidden animate-bubble-pulse"
               style={{
-                width: '200px',
-                height: '200px',
+                width: '220px',
+                height: '220px',
                 backgroundColor: '#91C5FF',
                 borderRadius: '50%',
                 zIndex: 1,
@@ -34,8 +34,8 @@ const HowItWorks = () => {
             <span 
               className="absolute hidden md:block animate-bubble-pulse"
               style={{
-                width: '260px',
-                height: '260px',
+                width: '340px',
+                height: '340px',
                 backgroundColor: '#91C5FF',
                 borderRadius: '50%',
                 zIndex: 1,
@@ -44,9 +44,9 @@ const HowItWorks = () => {
                 transform: 'translate(-50%, -50%)'
               }}
             ></span>
-            <span className="relative z-10 px-2" style={{ color: '#FFFFFF' }}>perfect outfit</span>
+            <span className="relative px-2" style={{ color: '#FFFFFF', zIndex: 10 }}>perfect outfit</span>
           </span>
-          {' '}<span style={{ color: '#5B3A9E' }}>in 3 steps</span>
+          {' '}<span style={{ color: '#5B3A9E', position: 'relative', zIndex: 10 }}>in 3 steps</span>
         </h2>
       </div>
 
