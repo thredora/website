@@ -1,6 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const HowItWorks = () => {
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const section = document.getElementById('how-it-works');
+      if (section) {
+        const rect = section.getBoundingClientRect();
+        const sectionHeight = rect.height;
+        const scrolled = -rect.top;
+        const progress = Math.max(0, Math.min(1, scrolled / (sectionHeight * 0.7)));
+        setScrollProgress(progress);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Calculate which images should be visible on mobile based on scroll
+  const image1Visible = scrollProgress > 0;
+  const image2Progress = Math.max(0, Math.min(1, (scrollProgress - 0.3) / 0.3));
+  const image3Progress = Math.max(0, Math.min(1, (scrollProgress - 0.6) / 0.3));
+
   return (
     <section 
       id="how-it-works" 
@@ -18,7 +42,7 @@ const HowItWorks = () => {
           <span className="relative inline-block mx-1 md:mx-2" style={{ zIndex: 5 }}>
             {/* Mobile bubble */}
             <span 
-              className="absolute md:hidden animate-bubble-pulse"
+              className="absolute md:hidden bubble-float"
               style={{
                 width: '220px',
                 height: '220px',
@@ -26,13 +50,12 @@ const HowItWorks = () => {
                 borderRadius: '50%',
                 zIndex: -1,
                 left: '50%',
-                top: '50%',
-                transform: 'translate(-50%, -50%)'
+                top: '50%'
               }}
             ></span>
             {/* Desktop bubble */}
             <span 
-              className="absolute hidden md:block animate-bubble-pulse"
+              className="absolute hidden md:block bubble-float"
               style={{
                 width: '340px',
                 height: '340px',
@@ -40,8 +63,7 @@ const HowItWorks = () => {
                 borderRadius: '50%',
                 zIndex: -1,
                 left: '50%',
-                top: '50%',
-                transform: 'translate(-50%, -50%)'
+                top: '50%'
               }}
             ></span>
             <span className="relative px-2" style={{ color: '#FFFFFF', zIndex: 10 }}>perfect outfit</span>
@@ -50,35 +72,85 @@ const HowItWorks = () => {
         </h2>
       </div>
 
-      {/* Three Images Section */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-8" style={{ position: 'relative', zIndex: 10 }}>
+      {/* Desktop/Tablet: Three Images in Grid */}
+      <div className="hidden md:grid max-w-7xl mx-auto grid-cols-3 gap-6 lg:gap-8" style={{ position: 'relative', zIndex: 10 }}>
         {/* Image 1 */}
-        <div className="flex justify-center items-center md:animate-slideInFromRight">
+        <div className="flex justify-center items-center animate-slideInFromRight">
           <img 
             src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/0ogs0ou6_1-%20HIW.png"
             alt="Step 1 - Upload Your Wardrobe"
-            className="w-full max-w-md h-auto rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300"
+            className="w-full h-auto rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300"
           />
         </div>
 
         {/* Image 2 */}
-        <div className="flex justify-center items-center md:animate-slideInFromRight" style={{ animationDelay: '0.2s' }}>
+        <div className="flex justify-center items-center animate-slideInFromRight" style={{ animationDelay: '0.2s' }}>
           <img 
             src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/dslyh2yk_2-%20HIW.png"
             alt="Step 2 - Chat With Thread"
-            className="w-full max-w-md h-auto rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300"
+            className="w-full h-auto rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300"
           />
         </div>
 
         {/* Image 3 */}
-        <div className="flex justify-center items-center md:animate-slideInFromRight" style={{ animationDelay: '0.4s' }}>
+        <div className="flex justify-center items-center animate-slideInFromRight" style={{ animationDelay: '0.4s' }}>
           <img 
             src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/bhu88p5s_3-%20HIW.png"
             alt="Step 3 - Step Out In Style"
-            className="w-full max-w-md h-auto rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300"
+            className="w-full h-auto rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300"
           />
         </div>
       </div>
+
+      {/* Mobile: Overlaying Images with Scroll */}
+      <div className="md:hidden relative w-full max-w-md mx-auto" style={{ minHeight: '500px', position: 'relative', zIndex: 10 }}>
+        {/* Image 1 - Base layer */}
+        <div 
+          className="absolute inset-0 flex justify-center items-start transition-opacity duration-500"
+          style={{
+            opacity: image1Visible ? 1 : 0
+          }}
+        >
+          <img 
+            src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/0ogs0ou6_1-%20HIW.png"
+            alt="Step 1 - Upload Your Wardrobe"
+            className="w-full h-auto rounded-2xl shadow-xl"
+          />
+        </div>
+
+        {/* Image 2 - Slides over Image 1 */}
+        <div 
+          className="absolute inset-0 flex justify-center items-start transition-all duration-700"
+          style={{
+            transform: `translateX(${(1 - image2Progress) * 100}%)`,
+            opacity: image2Progress
+          }}
+        >
+          <img 
+            src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/dslyh2yk_2-%20HIW.png"
+            alt="Step 2 - Chat With Thread"
+            className="w-full h-auto rounded-2xl shadow-xl"
+          />
+        </div>
+
+        {/* Image 3 - Slides over previous images */}
+        <div 
+          className="absolute inset-0 flex justify-center items-start transition-all duration-700"
+          style={{
+            transform: `translateX(${(1 - image3Progress) * 100}%)`,
+            opacity: image3Progress
+          }}
+        >
+          <img 
+            src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/bhu88p5s_3-%20HIW.png"
+            alt="Step 3 - Step Out In Style"
+            className="w-full h-auto rounded-2xl shadow-xl"
+          />
+        </div>
+      </div>
+
+      {/* Spacer for mobile scroll */}
+      <div className="md:hidden h-screen"></div>
     </section>
   );
 };
