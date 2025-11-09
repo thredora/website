@@ -11,16 +11,16 @@ const HowItWorks = () => {
     >
       {/* Main Title */}
       <div className="max-w-6xl mx-auto text-center mb-16 md:mb-20 px-4">
-        <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif leading-tight">
+        <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif leading-relaxed">
           <span style={{ color: '#6A4EB6' }}>From cluttered closet to </span>
           
-          {/* Blue bubble behind "perfect outfit" - responsive positioning */}
-          <span className="relative inline-block mx-1 md:mx-2">
+          {/* Perfectly circular blue bubble behind "perfect outfit" */}
+          <span className="relative inline-block mx-3 md:mx-4 my-2">
             <span 
               className="absolute animate-pulse-slow"
               style={{
-                width: '140%',
-                height: '160%',
+                width: '220px',
+                height: '220px',
                 backgroundColor: '#91C5FF',
                 borderRadius: '50%',
                 zIndex: 0,
@@ -29,7 +29,7 @@ const HowItWorks = () => {
                 transform: 'translate(-50%, -50%)'
               }}
             ></span>
-            <span className="relative z-10 px-2" style={{ color: '#FFFFFF' }}>perfect outfit</span>
+            <span className="relative z-10 px-2 whitespace-nowrap" style={{ color: '#FFFFFF' }}>perfect outfit</span>
           </span>
           
           <span style={{ color: '#6A4EB6' }}> in 3 steps</span>
