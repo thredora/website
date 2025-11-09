@@ -52,7 +52,7 @@ const HowItWorks = () => {
       {/* Three Images Section */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-8">
         {/* Image 1 */}
-        <div className="flex justify-center items-center animate-fadeInUp">
+        <div className="flex justify-center items-center md:animate-slideInFromRight">
           <img 
             src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/0ogs0ou6_1-%20HIW.png"
             alt="Step 1 - Upload Your Wardrobe"
@@ -61,7 +61,7 @@ const HowItWorks = () => {
         </div>
 
         {/* Image 2 */}
-        <div className="flex justify-center items-center animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
+        <div className="flex justify-center items-center md:animate-slideInFromRight" style={{ animationDelay: '0.2s' }}>
           <img 
             src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/dslyh2yk_2-%20HIW.png"
             alt="Step 2 - Chat With Thread"
@@ -70,7 +70,7 @@ const HowItWorks = () => {
         </div>
 
         {/* Image 3 */}
-        <div className="flex justify-center items-center animate-fadeInUp" style={{ animationDelay: '0.6s' }}>
+        <div className="flex justify-center items-center md:animate-slideInFromRight" style={{ animationDelay: '0.4s' }}>
           <img 
             src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/bhu88p5s_3-%20HIW.png"
             alt="Step 3 - Step Out In Style"
