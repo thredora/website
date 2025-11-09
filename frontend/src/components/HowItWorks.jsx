@@ -4,26 +4,39 @@ const HowItWorks = () => {
   return (
     <section 
       id="how-it-works" 
-      className="min-h-screen py-16 md:py-20 px-4 md:px-6 relative"
+      className="min-h-screen py-16 md:py-20 px-4 md:px-6 relative overflow-hidden"
       style={{
         background: 'linear-gradient(180deg, #B98CFF 0%, #FFFFFF 100%)'
       }}
     >
       {/* Main Title */}
       <div className="max-w-6xl mx-auto text-center mb-16 md:mb-20 px-4">
-        <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif leading-relaxed">
-          <span style={{ color: '#6A4EB6' }}>From cluttered closet to </span>
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-relaxed">
+          <span style={{ color: '#5B3A9E' }}>From cluttered closet to </span>
           
           {/* Perfectly circular blue bubble behind "perfect outfit" */}
-          <span className="relative inline-block mx-3 md:mx-4 my-2">
+          <span className="relative inline-block mx-2 md:mx-4 my-1 md:my-2">
             <span 
               className="absolute animate-pulse-slow"
               style={{
-                width: '180px',
-                height: '180px',
+                width: '160px',
+                height: '160px',
                 backgroundColor: '#91C5FF',
                 borderRadius: '50%',
-                zIndex: 0,
+                zIndex: -1,
+                left: '50%',
+                top: '50%',
+                transform: 'translate(-50%, -50%)'
+              }}
+            ></span>
+            <span 
+              className="absolute animate-pulse-slow hidden md:block"
+              style={{
+                width: '280px',
+                height: '280px',
+                backgroundColor: '#91C5FF',
+                borderRadius: '50%',
+                zIndex: -1,
                 left: '50%',
                 top: '50%',
                 transform: 'translate(-50%, -50%)'
@@ -32,7 +45,7 @@ const HowItWorks = () => {
             <span className="relative z-10 px-2 whitespace-nowrap" style={{ color: '#FFFFFF' }}>perfect outfit</span>
           </span>
           
-          <span style={{ color: '#6A4EB6' }}> in 3 steps</span>
+          <span style={{ color: '#5B3A9E' }}> in 3 steps</span>
         </h2>
       </div>
 
