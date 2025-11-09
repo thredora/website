@@ -222,6 +222,11 @@ code {
     animation: fadeInUp 1s ease-out;
 }
 
+.animate-slideInFromRight {
+    animation: slideInFromRight 0.8s ease-out;
+}
+
+
 .animate-slideFromTop {
     animation: slideFromTop 1s ease-out;
 }
