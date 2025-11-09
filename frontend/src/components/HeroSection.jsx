@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <div className="h-screen flex flex-col overflow-hidden">
+    <div className="min-h-screen flex flex-col relative">
       {/* Background Image */}
       <div className="absolute inset-0" style={{
         backgroundImage: 'url(https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/x4kzk0lm_new%20bg.png)',
