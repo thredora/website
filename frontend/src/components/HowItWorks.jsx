@@ -10,7 +10,7 @@ const HowItWorks = () => {
       }}
     >
       {/* Main Title */}
-      <div className="max-w-6xl mx-auto text-center mb-16 md:mb-20 px-4">
+      <div className="max-w-6xl mx-auto text-center mb-16 md:mb-20 px-4" style={{ position: 'relative', zIndex: 2 }}>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-relaxed" style={{ position: 'relative', zIndex: 10 }}>
           <span style={{ color: '#5B3A9E', position: 'relative', zIndex: 10 }}>From cluttered closet to</span>{' '}
           
@@ -24,7 +24,7 @@ const HowItWorks = () => {
                 height: '220px',
                 backgroundColor: '#91C5FF',
                 borderRadius: '50%',
-                zIndex: 1,
+                zIndex: -1,
                 left: '50%',
                 top: '50%',
                 transform: 'translate(-50%, -50%)'
@@ -38,7 +38,7 @@ const HowItWorks = () => {
                 height: '340px',
                 backgroundColor: '#91C5FF',
                 borderRadius: '50%',
-                zIndex: 1,
+                zIndex: -1,
                 left: '50%',
                 top: '50%',
                 transform: 'translate(-50%, -50%)'
@@ -51,7 +51,7 @@ const HowItWorks = () => {
       </div>
 
       {/* Three Images Section */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-8" style={{ position: 'relative', zIndex: 10 }}>
         {/* Image 1 */}
         <div className="flex justify-center items-center md:animate-slideInFromRight">
           <img 
