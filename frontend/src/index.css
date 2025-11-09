@@ -233,6 +233,11 @@ code {
 }
 
 .animate-slideInFromRight {
+
+.animate-bubble-pulse {
+    animation: bubblePulse 3s ease-in-out infinite;
+}
+
     animation: slideInFromRight 0.8s ease-out;
 }
 
