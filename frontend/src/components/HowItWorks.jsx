@@ -4,7 +4,7 @@ const HowItWorks = () => {
   return (
     <section 
       id="how-it-works" 
-      className="min-h-screen py-16 md:py-20 px-4 md:px-6 relative overflow-hidden"
+      className="min-h-screen py-16 md:py-20 px-4 md:px-6 relative"
       style={{
         background: 'linear-gradient(180deg, #B98CFF 0%, #FFFFFF 100%)'
       }}
