@@ -1,35 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 const HowItWorks = () => {
-  const [scrollProgress, setScrollProgress] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const section = document.getElementById('how-it-works');
-      if (section) {
-        const rect = section.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-        
-        // Start showing images when section is more in view (title area visible)
-        if (rect.top < windowHeight * 0.3) {
-          const sectionHeight = rect.height;
-          const scrolled = (windowHeight * 0.3) - rect.top;
-          const progress = Math.max(0, Math.min(1, scrolled / (sectionHeight * 0.5)));
-          setScrollProgress(progress);
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // Calculate which images should be visible on mobile based on scroll
-  const image1Visible = scrollProgress > 0.1; // Appears when section is well into view
-  const image2Progress = Math.max(0, Math.min(1, (scrollProgress - 0.3) / 0.15)); // Starts at 30%, done by 45%
-  const image3Progress = Math.max(0, Math.min(1, (scrollProgress - 0.5) / 0.15)); // Starts at 50%, done by 65%
-
   return (
     <section 
       id="how-it-works" 
@@ -109,15 +80,10 @@ const HowItWorks = () => {
         </div>
       </div>
 
-      {/* Mobile: Overlaying Images with Scroll */}
-      <div className="md:hidden relative w-full max-w-md mx-auto mb-8" style={{ minHeight: '600px', position: 'relative', zIndex: 10 }}>
-        {/* Image 1 - Base layer */}
-        <div 
-          className="absolute inset-0 flex justify-center items-start transition-opacity duration-500"
-          style={{
-            opacity: image1Visible ? 1 : 0
-          }}
-        >
+      {/* Mobile: Simple Stacked Images */}
+      <div className="md:hidden flex flex-col gap-8 max-w-md mx-auto" style={{ position: 'relative', zIndex: 10 }}>
+        {/* Image 1 */}
+        <div className="flex justify-center items-center">
           <img 
             src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/0ogs0ou6_1-%20HIW.png"
             alt="Step 1 - Upload Your Wardrobe"
@@ -125,14 +91,8 @@ const HowItWorks = () => {
           />
         </div>
 
-        {/* Image 2 - Slides over Image 1 */}
-        <div 
-          className="absolute inset-0 flex justify-center items-start transition-all duration-700"
-          style={{
-            transform: `translateX(${(1 - image2Progress) * 100}%)`,
-            opacity: image2Progress
-          }}
-        >
+        {/* Image 2 */}
+        <div className="flex justify-center items-center">
           <img 
             src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/dslyh2yk_2-%20HIW.png"
             alt="Step 2 - Chat With Thread"
@@ -140,14 +100,8 @@ const HowItWorks = () => {
           />
         </div>
 
-        {/* Image 3 - Slides over previous images */}
-        <div 
-          className="absolute inset-0 flex justify-center items-start transition-all duration-700"
-          style={{
-            transform: `translateX(${(1 - image3Progress) * 100}%)`,
-            opacity: image3Progress
-          }}
-        >
+        {/* Image 3 */}
+        <div className="flex justify-center items-center">
           <img 
             src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/bhu88p5s_3-%20HIW.png"
             alt="Step 3 - Step Out In Style"
