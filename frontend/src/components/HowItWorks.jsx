@@ -55,7 +55,8 @@ const HowItWorks = () => {
                 borderRadius: '50%',
                 zIndex: -1,
                 left: '50%',
-                top: '50%'
+                top: '50%',
+                transform: 'translate(-50%, -50%)'
               }}
             ></span>
             {/* Desktop bubble */}
@@ -68,7 +69,8 @@ const HowItWorks = () => {
                 borderRadius: '50%',
                 zIndex: -1,
                 left: '50%',
-                top: '50%'
+                top: '50%',
+                transform: 'translate(-50%, -50%)'
               }}
             ></span>
             <span className="relative px-2" style={{ color: '#FFFFFF', zIndex: 10 }}>perfect outfit</span>
