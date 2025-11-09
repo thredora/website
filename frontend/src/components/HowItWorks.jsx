@@ -19,8 +19,8 @@ const HowItWorks = () => {
             <span 
               className="absolute animate-pulse-slow"
               style={{
-                width: '220px',
-                height: '220px',
+                width: '180px',
+                height: '180px',
                 backgroundColor: '#91C5FF',
                 borderRadius: '50%',
                 zIndex: 0,
