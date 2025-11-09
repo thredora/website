@@ -149,6 +149,16 @@ code {
         opacity: 1;
         transform: translateX(0);
     }
+
+@keyframes bubblePulse {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(0.92);
+    }
+}
+
 }
 
 
