@@ -26,9 +26,9 @@ const HowItWorks = () => {
   }, []);
 
   // Calculate which images should be visible on mobile based on scroll
-  const image1Visible = scrollProgress > 0.05; // Appears almost immediately
-  const image2Progress = Math.max(0, Math.min(1, (scrollProgress - 0.15) / 0.15)); // Starts at 15%, done by 30%
-  const image3Progress = Math.max(0, Math.min(1, (scrollProgress - 0.35) / 0.15)); // Starts at 35%, done by 50%
+  const image1Visible = scrollProgress > 0.02; // Appears almost immediately
+  const image2Progress = Math.max(0, Math.min(1, (scrollProgress - 0.1) / 0.1)); // Starts at 10%, done by 20%
+  const image3Progress = Math.max(0, Math.min(1, (scrollProgress - 0.22) / 0.1)); // Starts at 22%, done by 32%
 
   return (
     <section 
