@@ -1,5 +1,9 @@
 /* Thredora Landing Page Styles */
 
+html {
+    scroll-behavior: smooth;
+}
+
 .App {
     position: relative;
     min-height: 100vh;
