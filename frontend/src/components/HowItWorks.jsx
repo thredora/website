@@ -10,11 +10,11 @@ const HowItWorks = () => {
         const rect = section.getBoundingClientRect();
         const windowHeight = window.innerHeight;
         
-        // Start showing images when section enters viewport
-        if (rect.top < windowHeight) {
+        // Start showing images when section is more in view (title area visible)
+        if (rect.top < windowHeight * 0.3) {
           const sectionHeight = rect.height;
-          const scrolled = windowHeight - rect.top;
-          const progress = Math.max(0, Math.min(1, scrolled / sectionHeight));
+          const scrolled = (windowHeight * 0.3) - rect.top;
+          const progress = Math.max(0, Math.min(1, scrolled / (sectionHeight * 0.5)));
           setScrollProgress(progress);
         }
       }
@@ -26,9 +26,9 @@ const HowItWorks = () => {
   }, []);
 
   // Calculate which images should be visible on mobile based on scroll
-  const image1Visible = scrollProgress > 0.02; // Appears almost immediately
-  const image2Progress = Math.max(0, Math.min(1, (scrollProgress - 0.1) / 0.1)); // Starts at 10%, done by 20%
-  const image3Progress = Math.max(0, Math.min(1, (scrollProgress - 0.22) / 0.1)); // Starts at 22%, done by 32%
+  const image1Visible = scrollProgress > 0.1; // Appears when section is well into view
+  const image2Progress = Math.max(0, Math.min(1, (scrollProgress - 0.3) / 0.15)); // Starts at 30%, done by 45%
+  const image3Progress = Math.max(0, Math.min(1, (scrollProgress - 0.5) / 0.15)); // Starts at 50%, done by 65%
 
   return (
     <section 
