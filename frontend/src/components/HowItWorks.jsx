@@ -169,13 +169,66 @@ const HowItWorks = () => {
 
       {/* New Headline */}
       <div className="max-w-6xl mx-auto text-center mb-16 px-4" style={{ position: 'relative', zIndex: 2 }}>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-relaxed">
           <span style={{ color: '#5B3A9E' }}>Look</span>{' '}
-          <span style={{ color: '#D4AF37' }}>Good.</span>{' '}
+          
+          {/* Bubble behind "Good." */}
+          <span className="relative inline-block mx-1 md:mx-2">
+            <span 
+              className="absolute bubble-float"
+              style={{
+                width: '140px',
+                height: '140px',
+                backgroundColor: '#91C5FF',
+                borderRadius: '50%',
+                zIndex: -1,
+                left: '50%',
+                top: '50%',
+                transform: 'translate(-50%, -50%)'
+              }}
+            ></span>
+            <span className="relative px-2" style={{ color: '#FFFFFF', zIndex: 10 }}>Good.</span>
+          </span>{' '}
+          
           <span style={{ color: '#5B3A9E' }}>Feel</span>{' '}
-          <span style={{ color: '#D4AF37' }}>Confident.</span>{' '}
+          
+          {/* Bubble behind "Confident." */}
+          <span className="relative inline-block mx-1 md:mx-2">
+            <span 
+              className="absolute bubble-float"
+              style={{
+                width: '180px',
+                height: '180px',
+                backgroundColor: '#91C5FF',
+                borderRadius: '50%',
+                zIndex: -1,
+                left: '50%',
+                top: '50%',
+                transform: 'translate(-50%, -50%)'
+              }}
+            ></span>
+            <span className="relative px-2" style={{ color: '#FFFFFF', zIndex: 10 }}>Confident.</span>
+          </span>{' '}
+          
           <span style={{ color: '#5B3A9E' }}>Every</span>{' '}
-          <span style={{ color: '#D4AF37' }}>Day.</span>
+          
+          {/* Bubble behind "Day." */}
+          <span className="relative inline-block mx-1 md:mx-2">
+            <span 
+              className="absolute bubble-float"
+              style={{
+                width: '130px',
+                height: '130px',
+                backgroundColor: '#91C5FF',
+                borderRadius: '50%',
+                zIndex: -1,
+                left: '50%',
+                top: '50%',
+                transform: 'translate(-50%, -50%)'
+              }}
+            ></span>
+            <span className="relative px-2" style={{ color: '#FFFFFF', zIndex: 10 }}>Day.</span>
+          </span>
         </h2>
       </div>
 
