@@ -328,14 +328,29 @@ const HowItWorks = () => {
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-relaxed">
           <span style={{ color: '#5B3A9E' }}>What Can Thredora Do For </span>
           <span className="relative inline-block">
+            {/* Desktop bubble */}
             <span 
-              className="absolute bubble-float"
+              className="absolute hidden md:block bubble-float"
               style={{
                 width: '160px',
                 height: '160px',
                 backgroundColor: '#91C5FF',
                 borderRadius: '50%',
-                zIndex: 1,
+                zIndex: -1,
+                left: '50%',
+                top: '50%',
+                transform: 'translate(-50%, -50%)'
+              }}
+            ></span>
+            {/* Mobile bubble - smaller */}
+            <span 
+              className="absolute md:hidden bubble-float"
+              style={{
+                width: '120px',
+                height: '120px',
+                backgroundColor: '#91C5FF',
+                borderRadius: '50%',
+                zIndex: -1,
                 left: '50%',
                 top: '50%',
                 transform: 'translate(-50%, -50%)'
