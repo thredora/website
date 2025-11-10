@@ -72,16 +72,17 @@ const HowItWorks = () => {
       {/* Main Title */}
       <div className="max-w-6xl mx-auto text-center mb-16 md:mb-20 px-4" style={{ position: 'relative', zIndex: 2 }}>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-relaxed" style={{ position: 'relative', zIndex: 10 }}>
-          <span style={{ color: '#5B3A9E', position: 'relative', zIndex: 10 }}>From cluttered closet to</span>{' '}
+          <span style={{ color: '#5B3A9E', position: 'relative', zIndex: 10 }}>From cluttered closet to</span>
+          {' '}
           
           {/* Perfectly circular blue bubble behind "perfect outfit" */}
           <span className="relative inline-block mx-1 md:mx-2" style={{ zIndex: 5 }}>
-            {/* Mobile bubble - larger to cover entire headline */}
+            {/* Mobile bubble - smaller with floating animation */}
             <span 
               className="absolute md:hidden bubble-float"
               style={{
-                width: '100vw',
-                height: '350px',
+                width: '280px',
+                height: '280px',
                 backgroundColor: '#91C5FF',
                 borderRadius: '50%',
                 zIndex: -1,
@@ -106,7 +107,8 @@ const HowItWorks = () => {
             ></span>
             <span className="relative px-2" style={{ color: '#FFFFFF', zIndex: 10 }}>perfect outfit</span>
           </span>
-          {' '}<span style={{ color: '#5B3A9E', position: 'relative', zIndex: 10 }}>in 3 steps</span>
+          {' '}
+          <span style={{ color: '#5B3A9E', position: 'relative', zIndex: 10 }}>in 3 steps</span>
         </h2>
       </div>
 
