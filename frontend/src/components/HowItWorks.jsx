@@ -186,13 +186,13 @@ const HowItWorks = () => {
           ></div>
         </div>
 
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-relaxed md:leading-loose relative" style={{ zIndex: 1 }}>
-          {/* Desktop version with individual bubbles */}
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-relaxed md:leading-normal relative" style={{ zIndex: 1 }}>
+          {/* Desktop version with individual bubbles and tighter spacing */}
           <span className="hidden md:inline">
             <span style={{ color: '#5B3A9E' }}>Look</span>{' '}
             
             {/* Bubble behind "Good." */}
-            <span className="relative inline-block mx-2 md:mx-3 my-2">
+            <span className="relative inline-block mx-1 my-1">
               <span 
                 className="absolute bubble-float"
                 style={{
@@ -212,7 +212,7 @@ const HowItWorks = () => {
             <span style={{ color: '#5B3A9E' }}>Feel</span>{' '}
             
             {/* Bubble behind "Confident." */}
-            <span className="relative inline-block mx-2 md:mx-3 my-2">
+            <span className="relative inline-block mx-1 my-1">
               <span 
                 className="absolute bubble-float"
                 style={{
@@ -232,7 +232,7 @@ const HowItWorks = () => {
             <span style={{ color: '#5B3A9E' }}>Every</span>{' '}
             
             {/* Bubble behind "Day." */}
-            <span className="relative inline-block mx-2 md:mx-3 my-2">
+            <span className="relative inline-block mx-1 my-1">
               <span 
                 className="absolute bubble-float"
                 style={{
@@ -250,14 +250,18 @@ const HowItWorks = () => {
             </span>
           </span>
 
-          {/* Mobile version without individual bubbles - plain text */}
-          <span className="md:hidden">
-            <span style={{ color: '#5B3A9E' }}>Look</span>{' '}
-            <span style={{ color: '#FFFFFF' }}>Good.</span>{' '}
-            <span style={{ color: '#5B3A9E' }}>Feel</span>{' '}
-            <span style={{ color: '#FFFFFF' }}>Confident.</span>{' '}
-            <span style={{ color: '#5B3A9E' }}>Every</span>{' '}
-            <span style={{ color: '#FFFFFF' }}>Day.</span>
+          {/* Mobile version: 3 lines with 3 words each */}
+          <span className="md:hidden block">
+            <span className="block">
+              <span style={{ color: '#5B3A9E' }}>Look</span>{' '}
+              <span style={{ color: '#FFFFFF' }}>Good.</span>{' '}
+              <span style={{ color: '#5B3A9E' }}>Feel</span>
+            </span>
+            <span className="block">
+              <span style={{ color: '#FFFFFF' }}>Confident.</span>{' '}
+              <span style={{ color: '#5B3A9E' }}>Every</span>{' '}
+              <span style={{ color: '#FFFFFF' }}>Day.</span>
+            </span>
           </span>
         </h2>
       </div>
