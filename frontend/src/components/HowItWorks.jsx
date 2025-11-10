@@ -252,7 +252,7 @@ const HowItWorks = () => {
             </span>
           </span>
 
-          {/* Mobile version: 3 lines with 3 words each */}
+          {/* Mobile version: 3 lines with 3 words, 2 words, 1 word */}
           <span className="md:hidden block">
             <span className="block">
               <span style={{ color: '#5B3A9E' }}>Look</span>{' '}
@@ -261,7 +261,9 @@ const HowItWorks = () => {
             </span>
             <span className="block">
               <span style={{ color: '#FFFFFF' }}>Confident.</span>{' '}
-              <span style={{ color: '#5B3A9E' }}>Every</span>{' '}
+              <span style={{ color: '#5B3A9E' }}>Every</span>
+            </span>
+            <span className="block">
               <span style={{ color: '#FFFFFF' }}>Day.</span>
             </span>
           </span>
