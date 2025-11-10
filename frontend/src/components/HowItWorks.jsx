@@ -24,16 +24,31 @@ const HowItWorks = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Simple gradient from purple to white
+  // Gradient from purple to white to light blue
   const interpolateColor = (progress) => {
-    const start = { r: 185, g: 140, b: 255 }; // #B98CFF
-    const end = { r: 255, g: 255, b: 255 }; // #FFFFFF
-    
-    const r = Math.round(start.r + (end.r - start.r) * progress);
-    const g = Math.round(start.g + (end.g - start.g) * progress);
-    const b = Math.round(start.b + (end.b - start.b) * progress);
-    
-    return `rgb(${r}, ${g}, ${b})`;
+    if (progress < 0.5) {
+      // First half: Purple to White
+      const localProgress = progress * 2;
+      const start = { r: 185, g: 140, b: 255 }; // #B98CFF
+      const end = { r: 255, g: 255, b: 255 }; // #FFFFFF
+      
+      const r = Math.round(start.r + (end.r - start.r) * localProgress);
+      const g = Math.round(start.g + (end.g - start.g) * localProgress);
+      const b = Math.round(start.b + (end.b - start.b) * localProgress);
+      
+      return `rgb(${r}, ${g}, ${b})`;
+    } else {
+      // Second half: White to Light Blue
+      const localProgress = (progress - 0.5) * 2;
+      const start = { r: 255, g: 255, b: 255 }; // #FFFFFF
+      const end = { r: 159, g: 198, b: 242 }; // #9FC6F2
+      
+      const r = Math.round(start.r + (end.r - start.r) * localProgress);
+      const g = Math.round(start.g + (end.g - start.g) * localProgress);
+      const b = Math.round(start.b + (end.b - start.b) * localProgress);
+      
+      return `rgb(${r}, ${g}, ${b})`;
+    }
   };
 
   return (
