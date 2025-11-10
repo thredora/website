@@ -24,7 +24,7 @@ const HowItWorks = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Interpolate with more white space in the middle
+  // Improved gradient with new yellow color
   const interpolateColor = (progress) => {
     if (progress < 0.35) {
       // First 35%: Purple to White
@@ -41,10 +41,10 @@ const HowItWorks = () => {
       // Middle 30%: Stay White
       return 'rgb(255, 255, 255)';
     } else {
-      // Last 35%: White to Gold
+      // Last 35%: White to Bright Yellow
       const localProgress = (progress - 0.65) / 0.35;
       const start = { r: 255, g: 255, b: 255 }; // #FFFFFF
-      const end = { r: 230, g: 213, b: 145 }; // #E6D591
+      const end = { r: 233, g: 222, b: 95 }; // #E9DE5F
       
       const r = Math.round(start.r + (end.r - start.r) * localProgress);
       const g = Math.round(start.g + (end.g - start.g) * localProgress);
