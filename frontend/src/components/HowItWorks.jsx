@@ -57,7 +57,7 @@ const HowItWorks = () => {
           <span style={{ color: '#5B3A9E', position: 'relative', zIndex: 10 }}>From cluttered closet to </span>
           
           {/* Perfectly circular blue bubble behind "perfect outfit" */}
-          <span className="relative inline-block mx-1 md:mx-2" style={{ zIndex: 5 }}>
+          <span className="relative inline-block md:mx-2" style={{ zIndex: 5 }}>
             {/* Mobile bubble - smaller with floating animation */}
             <span 
               className="absolute md:hidden bubble-float"
