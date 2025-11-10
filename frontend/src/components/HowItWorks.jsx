@@ -24,16 +24,31 @@ const HowItWorks = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Interpolate between white and gold
+  // Interpolate between purple, white, then gold
   const interpolateColor = (progress) => {
-    const start = { r: 255, g: 255, b: 255 }; // #FFFFFF
-    const end = { r: 230, g: 213, b: 145 }; // #E6D591
-    
-    const r = Math.round(start.r + (end.r - start.r) * progress);
-    const g = Math.round(start.g + (end.g - start.g) * progress);
-    const b = Math.round(start.b + (end.b - start.b) * progress);
-    
-    return `rgb(${r}, ${g}, ${b})`;
+    if (progress < 0.5) {
+      // First half: Purple to White
+      const localProgress = progress * 2; // 0 to 1
+      const start = { r: 185, g: 140, b: 255 }; // #B98CFF
+      const end = { r: 255, g: 255, b: 255 }; // #FFFFFF
+      
+      const r = Math.round(start.r + (end.r - start.r) * localProgress);
+      const g = Math.round(start.g + (end.g - start.g) * localProgress);
+      const b = Math.round(start.b + (end.b - start.b) * localProgress);
+      
+      return `rgb(${r}, ${g}, ${b})`;
+    } else {
+      // Second half: White to Gold
+      const localProgress = (progress - 0.5) * 2; // 0 to 1
+      const start = { r: 255, g: 255, b: 255 }; // #FFFFFF
+      const end = { r: 230, g: 213, b: 145 }; // #E6D591
+      
+      const r = Math.round(start.r + (end.r - start.r) * localProgress);
+      const g = Math.round(start.g + (end.g - start.g) * localProgress);
+      const b = Math.round(start.b + (end.b - start.b) * localProgress);
+      
+      return `rgb(${r}, ${g}, ${b})`;
+    }
   };
 
   return (
