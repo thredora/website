@@ -322,6 +322,89 @@ const HowItWorks = () => {
           />
         </div>
       </div>
+
+      {/* Third Headline - What Can Thredora Do For You */}
+      <div className="max-w-6xl mx-auto text-center mb-16 mt-20 px-4" style={{ position: 'relative', zIndex: 2 }}>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-relaxed">
+          <span style={{ color: '#5B3A9E' }}>What Can Thredora Do For </span>
+          <span className="relative inline-block">
+            <span 
+              className="absolute bubble-float"
+              style={{
+                width: '160px',
+                height: '160px',
+                backgroundColor: '#91C5FF',
+                borderRadius: '50%',
+                zIndex: 1,
+                left: '50%',
+                top: '50%',
+                transform: 'translate(-50%, -50%)'
+              }}
+            ></span>
+            <span className="relative px-2" style={{ color: '#FFFFFF', zIndex: 10 }}>You</span>
+          </span>
+        </h2>
+      </div>
+
+      {/* Desktop/Tablet: Three Thread Images in Grid */}
+      <div className="hidden md:grid max-w-7xl mx-auto grid-cols-3 gap-6 lg:gap-8" style={{ position: 'relative', zIndex: 10 }}>
+        {/* Thread Image 1 */}
+        <div className="flex justify-center items-center animate-slideInFromRight">
+          <img 
+            src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/8622vov8_1-%20Thread.png"
+            alt="Thread Feature 1"
+            className="w-full h-auto rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+
+        {/* Thread Image 2 */}
+        <div className="flex justify-center items-center animate-slideInFromRight" style={{ animationDelay: '0.2s' }}>
+          <img 
+            src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/wwo6n0vx_2-%20Thread.png"
+            alt="Thread Feature 2"
+            className="w-full h-auto rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+
+        {/* Thread Image 3 */}
+        <div className="flex justify-center items-center animate-slideInFromRight" style={{ animationDelay: '0.4s' }}>
+          <img 
+            src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/3hdb6s10_3-%20Thread.png"
+            alt="Thread Feature 3"
+            className="w-full h-auto rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+      </div>
+
+      {/* Mobile: Simple Stacked Thread Images */}
+      <div className="md:hidden flex flex-col gap-8 max-w-md mx-auto" style={{ position: 'relative', zIndex: 10 }}>
+        {/* Thread Image 1 */}
+        <div className="flex justify-center items-center">
+          <img 
+            src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/8622vov8_1-%20Thread.png"
+            alt="Thread Feature 1"
+            className="w-full h-auto rounded-2xl shadow-xl active:scale-95 transition-transform duration-200"
+          />
+        </div>
+
+        {/* Thread Image 2 */}
+        <div className="flex justify-center items-center">
+          <img 
+            src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/wwo6n0vx_2-%20Thread.png"
+            alt="Thread Feature 2"
+            className="w-full h-auto rounded-2xl shadow-xl active:scale-95 transition-transform duration-200"
+          />
+        </div>
+
+        {/* Thread Image 3 */}
+        <div className="flex justify-center items-center">
+          <img 
+            src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/3hdb6s10_3-%20Thread.png"
+            alt="Thread Feature 3"
+            className="w-full h-auto rounded-2xl shadow-xl active:scale-95 transition-transform duration-200"
+          />
+        </div>
+      </div>
     </section>
   );
 };
