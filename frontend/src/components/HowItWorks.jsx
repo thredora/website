@@ -76,12 +76,12 @@ const HowItWorks = () => {
           
           {/* Perfectly circular blue bubble behind "perfect outfit" */}
           <span className="relative inline-block mx-1 md:mx-2" style={{ zIndex: 5 }}>
-            {/* Mobile bubble */}
+            {/* Mobile bubble - larger to cover entire headline */}
             <span 
               className="absolute md:hidden bubble-float"
               style={{
-                width: '220px',
-                height: '220px',
+                width: '100vw',
+                height: '350px',
                 backgroundColor: '#91C5FF',
                 borderRadius: '50%',
                 zIndex: -1,
