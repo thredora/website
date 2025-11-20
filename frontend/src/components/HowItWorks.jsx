@@ -1,10 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const HowItWorks = () => {
+  const [textVisible, setTextVisible] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const textSection = document.getElementById('text-section');
+      if (textSection) {
+        const rect = textSection.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        
+        // Calculate visibility based on position in viewport
+        if (rect.top < windowHeight && rect.bottom > 0) {
+          const visibleAmount = Math.min(1, Math.max(0, (windowHeight - rect.top) / windowHeight));
+          setTextVisible(visibleAmount);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <section 
       id="how-it-works" 
-      className="min-h-screen py-12 md:py-16 px-4 md:px-6 relative overflow-hidden flex flex-col"
+      className="min-h-screen pt-20 md:pt-28 pb-12 md:pb-16 px-4 md:px-6 relative overflow-hidden flex flex-col"
       style={{
         background: 'linear-gradient(180deg, #B98CFF 0%, #8643EF 100%)'
       }}
