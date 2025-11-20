@@ -91,11 +91,12 @@ const HowItWorks = () => {
 
       {/* Mobile: Stacked Cards */}
       <div 
+        id="mobile-cards"
         className="md:hidden flex flex-col gap-8 max-w-md mx-auto transition-opacity duration-500" 
         style={{ 
           position: 'relative', 
           zIndex: 10,
-          opacity: Math.max(0, 1 - textVisible * 1.2)
+          opacity: Math.min(cardsVisible, Math.max(0, 1 - textVisible * 1.2))
         }}
       >
         {/* Card 1 */}
