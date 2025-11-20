@@ -26,7 +26,7 @@ const HowItWorks = () => {
   return (
     <section 
       id="how-it-works" 
-      className="min-h-screen pt-20 md:pt-28 pb-12 md:pb-16 px-4 md:px-6 relative overflow-hidden flex flex-col"
+      className="min-h-screen pt-20 md:pt-24 pb-12 md:pb-16 px-4 md:px-6 relative overflow-hidden flex flex-col"
       style={{
         background: 'linear-gradient(180deg, #B98CFF 0%, #8643EF 100%)'
       }}
