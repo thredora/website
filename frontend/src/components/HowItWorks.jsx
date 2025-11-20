@@ -4,13 +4,13 @@ const HowItWorks = () => {
   return (
     <section 
       id="how-it-works" 
-      className="min-h-screen py-16 md:py-20 px-4 md:px-6 relative overflow-hidden"
+      className="min-h-screen py-12 md:py-16 px-4 md:px-6 relative overflow-hidden flex flex-col"
       style={{
         background: 'linear-gradient(180deg, #B98CFF 0%, #8643EF 100%)'
       }}
     >
       {/* Main Title */}
-      <div className="max-w-6xl mx-auto text-center mb-16 md:mb-20 px-4" style={{ position: 'relative', zIndex: 2 }}>
+      <div className="max-w-6xl mx-auto text-center mb-8 md:mb-12 px-4" style={{ position: 'relative', zIndex: 2 }}>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-relaxed" style={{ position: 'relative', zIndex: 10 }}>
           <span style={{ color: '#431FA2', position: 'relative', zIndex: 10 }}>From cluttered closet to </span>
           <span style={{ color: '#FFFFFF', position: 'relative', zIndex: 10 }}>perfect outfit</span>
@@ -19,7 +19,7 @@ const HowItWorks = () => {
       </div>
 
       {/* Desktop/Tablet: Three Cards in Grid */}
-      <div className="hidden md:grid max-w-7xl mx-auto grid-cols-3 gap-6 lg:gap-8" style={{ position: 'relative', zIndex: 10 }}>
+      <div className="hidden md:grid max-w-7xl mx-auto grid-cols-3 gap-4 lg:gap-6 flex-1 items-center" style={{ position: 'relative', zIndex: 10 }}>
         {/* Card 1 */}
         <div className="flex justify-center items-center group cursor-pointer">
           <img 
