@@ -244,10 +244,10 @@ const TermsAndConditions = () => {
         </div>
 
         {/* Back to Top Button */}
-        <div className="mt-12 text-center">
+        <div className="mt-8 text-center">
           <Link 
             to="/" 
-            className="inline-block bg-white text-purple-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg"
+            className="inline-block bg-white text-purple-700 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg text-sm"
             style={{ fontFamily: 'Libre Caslon Text, serif' }}
           >
             Back to Home
