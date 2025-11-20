@@ -116,11 +116,11 @@ const HowItWorks = () => {
       {/* Text Section */}
       <div 
         id="text-section"
-        className="max-w-4xl mx-auto mt-16 md:mt-24 px-4 md:px-8 transition-opacity duration-700" 
+        className="max-w-4xl mx-auto mt-16 md:mt-24 px-4 md:px-8 transition-opacity duration-500" 
         style={{ 
           position: 'relative', 
           zIndex: 10,
-          opacity: Math.min(1, textVisible * 1.5)
+          opacity: Math.min(1, textVisible * 2.5)
         }}
       >
         <div className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-loose space-y-6 md:space-y-8" style={{ 
