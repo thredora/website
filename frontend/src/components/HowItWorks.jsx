@@ -6,8 +6,7 @@ const HowItWorks = () => {
       id="how-it-works" 
       className="min-h-screen py-12 md:py-16 px-4 md:px-6 relative overflow-hidden flex flex-col"
       style={{
-        background: 'linear-gradient(180deg, #B98CFF 0%, #8643EF 100%)',
-        scrollMarginTop: '100px'
+        background: 'linear-gradient(180deg, #B98CFF 0%, #8643EF 100%)'
       }}
     >
       {/* Main Title */}
