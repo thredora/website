@@ -25,7 +25,7 @@ const HowItWorks = () => {
         const windowHeight = window.innerHeight;
         
         if (rect.top < windowHeight && rect.bottom > 0) {
-          const visibleAmount = Math.min(1, Math.max(0, (windowHeight - rect.top) / (windowHeight * 0.7)));
+          const visibleAmount = Math.min(1, Math.max(0, (windowHeight - rect.top) / (windowHeight * 0.3)));
           setCardsVisible(visibleAmount);
         }
       }
