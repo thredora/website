@@ -1,35 +1,37 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 
 const TermsAndConditions = () => {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#B98CFF] to-[#8643EF] py-12 px-4 md:px-8">
+    <div className="min-h-screen bg-gradient-to-b from-[#B98CFF] to-[#8643EF] py-8 px-4 md:px-8">
       <div className="max-w-4xl mx-auto">
         {/* Back Button */}
         <Link 
           to="/" 
-          className="inline-flex items-center gap-2 text-white hover:text-gray-200 transition-colors duration-300 mb-8"
+          className="inline-flex items-center gap-2 text-white hover:text-gray-200 transition-colors duration-300 mb-6"
           style={{ fontFamily: 'Libre Caslon Text, serif' }}
         >
-          <ArrowLeft className="w-5 h-5" />
-          <span>Back to Home</span>
+          <ArrowLeft className="w-4 h-4" />
+          <span className="text-sm">Back to Home</span>
         </Link>
 
         {/* Main Heading */}
         <h1 
-          className="text-4xl md:text-5xl font-bold text-white text-center mb-4"
+          className="text-3xl md:text-4xl font-bold text-white text-center mb-3"
           style={{ fontFamily: 'Libre Caslon Text, serif' }}
         >
           Terms and Conditions
         </h1>
 
         {/* Content */}
-        <div className="text-white space-y-6" style={{ fontFamily: 'Libre Caslon Text, serif' }}>
-          <p className="text-lg md:text-xl">
-            <strong>TERMS & CONDITIONS</strong>
-          </p>
-          <p className="text-sm md:text-base">
+        <div className="text-white space-y-4" style={{ fontFamily: 'Libre Caslon Text, serif' }}>
+          <p className="text-xs md:text-sm">
             Last Updated: 25/11/2025
           </p>
           <p className="text-base md:text-lg">
