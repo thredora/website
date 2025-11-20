@@ -21,13 +21,13 @@ const Footer = () => {
 
           {/* Middle Section - Links */}
           <div className="flex flex-col md:flex-row items-center gap-2 md:gap-12">
-            <a 
-              href="#terms" 
+            <Link 
+              to="/terms" 
               className="text-white hover:text-gray-200 transition-colors duration-300 text-xs md:text-base"
               style={{ fontFamily: 'Libre Caslon Text, serif' }}
             >
               Terms and Conditions
-            </a>
+            </Link>
             <a 
               href="#privacy" 
               className="text-white hover:text-gray-200 transition-colors duration-300 text-xs md:text-base"
