@@ -28,13 +28,13 @@ const Footer = () => {
             >
               Terms and Conditions
             </Link>
-            <a 
-              href="#privacy" 
+            <Link 
+              to="/privacy" 
               className="text-white hover:text-gray-200 transition-colors duration-300 text-xs md:text-base cursor-pointer touch-manipulation"
               style={{ fontFamily: 'Libre Caslon Text, serif' }}
             >
               Privacy Policy
-            </a>
+            </Link>
             <a 
               href="#contact" 
               className="text-white hover:text-gray-200 transition-colors duration-300 text-xs md:text-base cursor-pointer touch-manipulation"
