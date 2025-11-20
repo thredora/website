@@ -41,7 +41,13 @@ const HowItWorks = () => {
       </div>
 
       {/* Desktop/Tablet: Three Cards in Grid */}
-      <div className="hidden md:grid max-w-7xl mx-auto grid-cols-3 gap-4 lg:gap-6 flex-1 items-center" style={{ position: 'relative', zIndex: 10 }}>
+      <div 
+        className="hidden md:grid max-w-7xl mx-auto grid-cols-3 gap-4 lg:gap-6 flex-1 items-center transition-opacity duration-700" 
+        style={{ 
+          position: 'relative', 
+          zIndex: 10
+        }}
+      >
         {/* Card 1 */}
         <div className="flex justify-center items-center group cursor-pointer">
           <img 
