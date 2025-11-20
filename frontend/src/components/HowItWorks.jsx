@@ -82,7 +82,7 @@ const HowItWorks = () => {
         style={{ 
           position: 'relative', 
           zIndex: 10,
-          opacity: Math.max(0, 1 - textVisible * 2.5)
+          opacity: Math.max(0, 1 - textVisible * 1.2)
         }}
       >
         {/* Card 1 */}
