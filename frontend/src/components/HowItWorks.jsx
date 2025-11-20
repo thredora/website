@@ -2,18 +2,31 @@ import React, { useEffect, useState } from 'react';
 
 const HowItWorks = () => {
   const [textVisible, setTextVisible] = useState(0);
+  const [cardsVisible, setCardsVisible] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
+      // Track text section visibility
       const textSection = document.getElementById('text-section');
       if (textSection) {
         const rect = textSection.getBoundingClientRect();
         const windowHeight = window.innerHeight;
         
-        // Calculate visibility based on position in viewport
         if (rect.top < windowHeight && rect.bottom > 0) {
           const visibleAmount = Math.min(1, Math.max(0, (windowHeight - rect.top) / windowHeight));
           setTextVisible(visibleAmount);
+        }
+      }
+
+      // Track cards section visibility (mobile only)
+      const cardsSection = document.getElementById('mobile-cards');
+      if (cardsSection) {
+        const rect = cardsSection.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        
+        if (rect.top < windowHeight && rect.bottom > 0) {
+          const visibleAmount = Math.min(1, Math.max(0, (windowHeight - rect.top) / (windowHeight * 0.7)));
+          setCardsVisible(visibleAmount);
         }
       }
     };
