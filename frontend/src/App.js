@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection';
 import HowItWorks from './components/HowItWorks';
 import Footer from './components/Footer';
 import TermsAndConditions from './components/TermsAndConditions';
+import PrivacyPolicy from './components/PrivacyPolicy';
 import './App.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           } 
         />
         <Route path="/terms" element={<TermsAndConditions />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>
     </BrowserRouter>
   );
