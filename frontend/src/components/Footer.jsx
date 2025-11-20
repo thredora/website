@@ -3,40 +3,40 @@ import { Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#B98DFE] py-8 md:py-12 px-4 md:px-8">
+    <footer className="bg-[#B98DFE] py-4 md:py-5 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-8">
           {/* Left Section - Logo and Copyright */}
-          <div className="flex flex-col items-center md:items-start gap-4">
+          <div className="flex items-center gap-3">
             <img 
-              src="https://customer-assets.emergentagent.com/job_dress-effortless/artifacts/p6w98td7_Header%20%281%29.png"
+              src="https://customer-assets.emergentagent.com/job_adcb6dde-669b-4845-8137-9955e5fecf88/artifacts/obc3uawj_New%20Logo.png"
               alt="Thredora Logo"
-              className="h-8 md:h-10 lg:h-12 w-auto"
+              className="h-6 w-6 md:h-7 md:w-7 rounded-md"
             />
-            <p className="text-white text-sm md:text-base" style={{ fontFamily: 'Libre Caslon Text, serif' }}>
+            <p className="text-white text-xs md:text-sm" style={{ fontFamily: 'Libre Caslon Text, serif' }}>
               Thredora 2025 ©
             </p>
           </div>
 
           {/* Middle Section - Links */}
-          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+          <div className="flex flex-row items-center gap-4 md:gap-12">
             <a 
               href="#terms" 
-              className="text-white hover:text-gray-200 transition-colors duration-300 text-sm md:text-base"
+              className="text-white hover:text-gray-200 transition-colors duration-300 text-xs md:text-sm"
               style={{ fontFamily: 'Libre Caslon Text, serif' }}
             >
               Terms and Conditions
             </a>
             <a 
               href="#privacy" 
-              className="text-white hover:text-gray-200 transition-colors duration-300 text-sm md:text-base"
+              className="text-white hover:text-gray-200 transition-colors duration-300 text-xs md:text-sm"
               style={{ fontFamily: 'Libre Caslon Text, serif' }}
             >
               Privacy Policy
             </a>
             <a 
               href="#contact" 
-              className="text-white hover:text-gray-200 transition-colors duration-300 text-sm md:text-base"
+              className="text-white hover:text-gray-200 transition-colors duration-300 text-xs md:text-sm"
               style={{ fontFamily: 'Libre Caslon Text, serif' }}
             >
               Contact Us
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
 
           {/* Right Section - Social Media */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4 md:gap-5">
             <a 
               href="https://www.instagram.com/thredora_/" 
               target="_blank" 
@@ -52,7 +52,7 @@ const Footer = () => {
               className="text-white hover:text-gray-200 transition-all duration-300 hover:scale-110"
               aria-label="Instagram"
             >
-              <Instagram className="w-6 h-6 md:w-7 md:h-7" />
+              <Instagram className="w-5 h-5 md:w-6 md:h-6" />
             </a>
             <a 
               href="https://x.com/thredora" 
@@ -62,7 +62,7 @@ const Footer = () => {
               aria-label="X (Twitter)"
             >
               <svg 
-                className="w-6 h-6 md:w-7 md:h-7" 
+                className="w-5 h-5 md:w-6 md:h-6" 
                 fill="currentColor" 
                 viewBox="0 0 24 24"
               >
