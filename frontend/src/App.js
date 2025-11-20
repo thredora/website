@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import HeroSection from './components/HeroSection';
 import HowItWorks from './components/HowItWorks';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Navigation />
         <HeroSection />
         <HowItWorks />
+        <Footer />
       </div>
     </BrowserRouter>
   );
