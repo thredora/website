@@ -46,10 +46,10 @@ const HowItWorks = () => {
     >
       {/* Main Title */}
       <div className="max-w-6xl mx-auto text-center mb-8 md:mb-12 px-4" style={{ position: 'relative', zIndex: 2 }}>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-relaxed" style={{ position: 'relative', zIndex: 10 }}>
-          <span style={{ color: '#431FA2', position: 'relative', zIndex: 10 }}>From cluttered closet to </span>
-          <span style={{ color: '#FFFFFF', position: 'relative', zIndex: 10 }}>perfect outfit</span>
-          <span style={{ color: '#431FA2', position: 'relative', zIndex: 10 }}> in 3 steps</span>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-relaxed" style={{ position: 'relative', zIndex: 10, color: '#FFFFFF' }}>
+          <span>From cluttered closet to </span>
+          <span style={{ fontStyle: 'italic', fontWeight: 'bold' }}>perfect outfit</span>
+          <span> in 3 steps</span>
         </h2>
       </div>
 
