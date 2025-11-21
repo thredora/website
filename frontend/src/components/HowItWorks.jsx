@@ -137,38 +137,92 @@ const HowItWorks = () => {
           opacity: Math.min(1, textVisible * 2.5)
         }}
       >
-        <div className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-loose space-y-6 md:space-y-8" style={{ 
-          fontFamily: 'Libre Caslon Text, serif',
-          textAlign: 'justify',
-          color: '#FFFFFF'
-        }}>
-          <div>
-            <h3 className="font-bold mb-2">Dressing well is a superpower.</h3>
-            <p>
-              It opens doors and shapes first impressions before you even say a word. Yet we all struggle with the questions: What colours work for me? Why does that outfit look flat on me?
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-bold mb-2">Fashion isn't one-size-fits-all.</h3>
-            <p>
-              Your style is as unique as you are. Some love the quiet confidence of muted tones; others thrive on bold statements. You don't need a trend chaser, you need someone who gets you.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-bold mb-2">Thredora is that someone.</h3>
-            <p>
-              Your AI stylist who knows your colours, your fits, and your vibe. No more guessing. Just outfits that make your clothes speak highly of you.
-            </p>
-          </div>
-
-          <p className="text-xl md:text-2xl lg:text-3xl font-bold text-center" style={{ 
-            textAlign: 'center',
-            marginTop: '2rem'
+        {/* Desktop: Narrower container with overlay */}
+        <div 
+          className="hidden md:block mx-auto rounded-2xl p-8 lg:p-10"
+          style={{
+            maxWidth: '680px',
+            backgroundColor: 'rgba(101, 58, 183, 0.3)',
+            backdropFilter: 'blur(8px)'
+          }}
+        >
+          <div className="text-base md:text-lg lg:text-xl space-y-6 md:space-y-8" style={{ 
+            fontFamily: 'Libre Caslon Text, serif',
+            textAlign: 'justify',
+            color: '#FFFFFF',
+            lineHeight: '1.9'
           }}>
-            Say hello to your new style bestie.
-          </p>
+            <div>
+              <h3 className="font-bold mb-3">Dressing well is a superpower.</h3>
+              <p>
+                It opens doors and shapes first impressions before you even say a word. Yet we all struggle with the questions: What colours work for me? Why does that outfit look flat on me?
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-bold mb-3">Fashion isn't one-size-fits-all.</h3>
+              <p>
+                Your style is as unique as you are. Some love the quiet confidence of muted tones; others thrive on bold statements. You don't need a trend chaser, you need someone who gets you.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-bold mb-3">Thredora is that someone.</h3>
+              <p>
+                Your AI stylist who knows your colours, your fits, and your vibe. No more guessing. Just outfits that make your clothes speak highly of you.
+              </p>
+            </div>
+
+            <p className="text-xl md:text-2xl lg:text-3xl font-bold text-center" style={{ 
+              textAlign: 'center',
+              marginTop: '3rem',
+              lineHeight: '1.6'
+            }}>
+              Say hello to your new style bestie.
+            </p>
+          </div>
+        </div>
+
+        {/* Mobile: Full width without overlay */}
+        <div 
+          className="block md:hidden"
+        >
+          <div className="text-base space-y-6" style={{ 
+            fontFamily: 'Libre Caslon Text, serif',
+            textAlign: 'justify',
+            color: '#FFFFFF',
+            lineHeight: '1.9'
+          }}>
+            <div>
+              <h3 className="font-bold mb-3">Dressing well is a superpower.</h3>
+              <p>
+                It opens doors and shapes first impressions before you even say a word. Yet we all struggle with the questions: What colours work for me? Why does that outfit look flat on me?
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-bold mb-3">Fashion isn't one-size-fits-all.</h3>
+              <p>
+                Your style is as unique as you are. Some love the quiet confidence of muted tones; others thrive on bold statements. You don't need a trend chaser, you need someone who gets you.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-bold mb-3">Thredora is that someone.</h3>
+              <p>
+                Your AI stylist who knows your colours, your fits, and your vibe. No more guessing. Just outfits that make your clothes speak highly of you.
+              </p>
+            </div>
+
+            <p className="text-xl font-bold text-center" style={{ 
+              textAlign: 'center',
+              marginTop: '3rem',
+              lineHeight: '1.6',
+              paddingTop: '1rem'
+            }}>
+              Say hello to your new style bestie.
+            </p>
+          </div>
         </div>
       </div>
     </section>
