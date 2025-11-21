@@ -142,22 +142,26 @@ const HowItWorks = () => {
           textAlign: 'justify',
           color: '#FFFFFF'
         }}>
-          <p>
-            Dressing well is a superpower. It gets you into rooms. It shapes how people see you, before you even say a word.
-            And yet, we all struggle. What colours truly work for me? Why does that amazing outfit look flat on me, but great on someone else?
-          </p>
+          <div>
+            <h3 className="font-bold mb-2">Dressing well is a superpower.</h3>
+            <p>
+              It opens doors and shapes first impressions before you even say a word. Yet we all struggle with the questions: What colours work for me? Why does that outfit look flat on me?
+            </p>
+          </div>
 
-          <p>
-            The truth is, fashion isn't one size fits all. Your style is as unique as your personality. Some prefer the quiet confidence of muted tones. Others prefer the energy of standing out.
-          </p>
+          <div>
+            <h3 className="font-bold mb-2">Fashion isn't one-size-fits-all.</h3>
+            <p>
+              Your style is as unique as you are. Some love the quiet confidence of muted tones; others thrive on bold statements. You don't need a trend chaser, you need someone who gets you.
+            </p>
+          </div>
 
-          <p>
-            You don't need a trend chaser. You need someone who gets you. Someone who can help you define your taste and dress in a way that feels authentic. In a way where your clothes speak highly of you.
-          </p>
-
-          <p>
-            Thredora is that someone. The one who understands your style, your colours, your fits. The one who knows what works for the occasion, the weather, and your vibe.
-          </p>
+          <div>
+            <h3 className="font-bold mb-2">Thredora is that someone.</h3>
+            <p>
+              Your AI stylist who knows your colours, your fits, and your vibe. No more guessing. Just outfits that make your clothes speak highly of you.
+            </p>
+          </div>
 
           <p className="text-xl md:text-2xl lg:text-3xl font-bold text-center" style={{ 
             textAlign: 'center',
