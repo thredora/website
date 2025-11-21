@@ -76,8 +76,11 @@ const Footer = () => {
 
         {/* Mobile Layout */}
         <div className="flex md:hidden flex-col gap-6">
+          {/* Semi-transparent white separator line */}
+          <div className="w-full h-px bg-white/30 -mt-2"></div>
+          
           {/* Top Row: Logo/Copyright (left) and Socials (right) */}
-          <div className="flex flex-row justify-between items-start">
+          <div className="flex flex-row justify-between items-end">
             {/* Left: Logo and Copyright stacked */}
             <div className="flex flex-col items-start gap-2">
               <img 
@@ -90,8 +93,8 @@ const Footer = () => {
               </p>
             </div>
 
-            {/* Right: Social icons side by side */}
-            <div className="flex flex-row items-center gap-4">
+            {/* Right: Social icons side by side, aligned with copyright text */}
+            <div className="flex flex-row items-center gap-4 mb-1">
               <a 
                 href="https://www.instagram.com/thredora_/" 
                 target="_blank" 
