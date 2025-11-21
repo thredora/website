@@ -58,7 +58,7 @@ const Navigation = () => {
               <Button className="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-medium px-4 py-1.5 rounded-full transition-all duration-300 hover:scale-105 shadow-lg text-sm hover:shadow-xl" style={{
                 fontFamily: 'Libre Caslon Text, serif'
               }}>
-                Sign Up
+                Open WhatsApp
               </Button>
             </div>
           </div>
