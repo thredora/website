@@ -143,7 +143,8 @@ const HowItWorks = () => {
           style={{
             maxWidth: '680px',
             backgroundColor: 'rgba(101, 58, 183, 0.3)',
-            backdropFilter: 'blur(8px)'
+            backdropFilter: 'blur(8px)',
+            boxShadow: '0 20px 60px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.2)'
           }}
         >
           <div className="text-base md:text-lg lg:text-xl space-y-6 md:space-y-8" style={{ 
