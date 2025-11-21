@@ -13,12 +13,12 @@ const Navigation = () => {
     <>
       {/* Desktop Navigation */}
       <nav className="fixed top-4 left-1/2 z-50 px-4 hidden md:block" style={{ transform: 'translateX(-50%)' }}>
-        <div className="bg-white/95 backdrop-blur-lg rounded-full px-6 py-2 shadow-lg border border-white/20 animate-slideFromTop" style={{
-          width: '50vw',
-          maxWidth: '850px',
-          minWidth: '650px'
+        <div className="bg-white/95 backdrop-blur-lg rounded-full px-8 py-2 shadow-lg border border-white/20 animate-slideFromTop" style={{
+          width: '55vw',
+          maxWidth: '900px',
+          minWidth: '700px'
         }}>
-          <div className="flex items-center justify-between w-full gap-6">
+          <div className="flex items-center justify-evenly w-full">
             {/* Logo */}
             <a href="/" className="flex items-center hover:scale-110 transition-all duration-300 flex-shrink-0">
               <img 
@@ -28,26 +28,26 @@ const Navigation = () => {
               />
             </a>
             
-            {/* Navigation Links - Centered Group */}
-            <div className="flex items-center gap-8 flex-1 justify-center">
-              <a href="#how-it-works" className="text-gray-600 hover:text-purple-700 transition-all duration-300 font-medium text-sm hover:scale-105 whitespace-nowrap" style={{
-                fontFamily: 'Libre Caslon Text, serif'
-              }}>
-                How It Works
-              </a>
-              
-              <a href="#pricing" className="text-gray-600 hover:text-purple-700 transition-all duration-300 font-medium text-sm hover:scale-105 whitespace-nowrap" style={{
-                fontFamily: 'Libre Caslon Text, serif'
-              }}>
-                Pricing
-              </a>
-              
-              <a href="#wardrobe" className="text-gray-600 hover:text-purple-700 transition-all duration-300 font-medium text-sm hover:scale-105 whitespace-nowrap" style={{
-                fontFamily: 'Libre Caslon Text, serif'
-              }}>
-                My Wardrobe
-              </a>
-            </div>
+            {/* Navigation Link 1 */}
+            <a href="#how-it-works" className="text-gray-600 hover:text-purple-700 transition-all duration-300 font-medium text-sm hover:scale-105 whitespace-nowrap" style={{
+              fontFamily: 'Libre Caslon Text, serif'
+            }}>
+              How It Works
+            </a>
+            
+            {/* Navigation Link 2 */}
+            <a href="#pricing" className="text-gray-600 hover:text-purple-700 transition-all duration-300 font-medium text-sm hover:scale-105 whitespace-nowrap" style={{
+              fontFamily: 'Libre Caslon Text, serif'
+            }}>
+              Pricing
+            </a>
+            
+            {/* Navigation Link 3 */}
+            <a href="#wardrobe" className="text-gray-600 hover:text-purple-700 transition-all duration-300 font-medium text-sm hover:scale-105 whitespace-nowrap" style={{
+              fontFamily: 'Libre Caslon Text, serif'
+            }}>
+              My Wardrobe
+            </a>
             
             {/* CTA Button */}
             <Button className="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-medium px-4 py-1.5 rounded-full transition-all duration-300 hover:scale-105 shadow-lg text-sm hover:shadow-xl whitespace-nowrap flex-shrink-0" style={{
