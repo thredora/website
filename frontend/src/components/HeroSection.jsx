@@ -114,11 +114,11 @@ const HeroSection = () => {
         
         {/* CTA Button */}
         <div className="flex justify-center mt-6">
-          <Button className="bg-yellow-400 hover:bg-yellow-500 text-gray-800 text-lg font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:scale-110 shadow-xl flex items-center gap-2 group animate-bounce-subtle hover:shadow-2xl" style={{
+          <Button className="bg-yellow-400 hover:bg-yellow-500 text-gray-800 text-base md:text-lg font-semibold px-4 md:px-8 py-3 rounded-full transition-all duration-300 hover:scale-110 shadow-xl flex items-center gap-2 group animate-bounce-subtle hover:shadow-2xl" style={{
             fontFamily: 'Libre Caslon Text, serif'
           }}>
             Start Chatting on WhatsApp
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
+            <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-2 transition-transform duration-300" />
           </Button>
         </div>
         
