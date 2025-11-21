@@ -130,7 +130,7 @@ const HowItWorks = () => {
       {/* Text Section */}
       <div 
         id="text-section"
-        className="max-w-4xl mx-auto mt-16 md:mt-24 px-4 md:px-8 transition-opacity duration-500" 
+        className="max-w-4xl mx-auto mt-16 md:mt-24 px-2 md:px-8 transition-opacity duration-500" 
         style={{ 
           position: 'relative', 
           zIndex: 10,
