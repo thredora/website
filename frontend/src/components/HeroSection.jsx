@@ -117,7 +117,7 @@ const HeroSection = () => {
           <Button className="bg-yellow-400 hover:bg-yellow-500 text-gray-800 text-lg font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:scale-110 shadow-xl flex items-center gap-2 group animate-bounce-subtle hover:shadow-2xl" style={{
             fontFamily: 'Libre Caslon Text, serif'
           }}>
-            Let's Get Started
+            Start Chatting on WhatsApp
             <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
           </Button>
         </div>
