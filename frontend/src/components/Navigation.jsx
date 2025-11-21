@@ -69,13 +69,13 @@ const Navigation = () => {
       <div className="md:hidden fixed top-4 right-4 z-50">
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="bg-white/95 backdrop-blur-lg rounded-full p-3 shadow-lg border border-white/20 animate-slideFromTop"
+          className="bg-white/95 backdrop-blur-lg rounded-full p-2 shadow-lg border border-white/20 animate-slideFromTop"
         >
           {isMenuOpen ? (
             <img 
               src="https://customer-assets.emergentagent.com/job_adcb6dde-669b-4845-8137-9955e5fecf88/artifacts/obc3uawj_New%20Logo.png" 
               alt="Thredora Logo" 
-              className="h-6 w-6 rounded-md shadow-sm"
+              className="h-8 w-8 rounded-md shadow-sm"
             />
           ) : (
             <Menu className="w-6 h-6" />
