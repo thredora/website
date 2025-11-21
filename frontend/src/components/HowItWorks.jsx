@@ -184,9 +184,14 @@ const HowItWorks = () => {
           </div>
         </div>
 
-        {/* Mobile: Full width without overlay */}
+        {/* Mobile: With overlay styling like desktop */}
         <div 
-          className="block md:hidden"
+          className="block md:hidden mx-auto rounded-2xl p-6"
+          style={{
+            backgroundColor: 'rgba(101, 58, 183, 0.3)',
+            backdropFilter: 'blur(8px)',
+            boxShadow: '0 20px 60px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.2)'
+          }}
         >
           <div className="text-base space-y-6" style={{ 
             fontFamily: 'Libre Caslon Text, serif',
