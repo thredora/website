@@ -64,7 +64,7 @@ const HowItWorks = () => {
         {/* Card 1 */}
         <div className="flex justify-center items-center group cursor-pointer">
           <img 
-            src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/zeguqh54_1-%20HIW%20%281%29.png"
+            src="/hiw-1.png"
             alt="Step 1"
             className="w-full h-auto rounded-2xl shadow-2xl transition-all duration-300 group-hover:scale-105 group-hover:shadow-3xl group-hover:rotate-1"
           />
@@ -73,7 +73,7 @@ const HowItWorks = () => {
         {/* Card 2 */}
         <div className="flex justify-center items-center group cursor-pointer">
           <img 
-            src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/wwvzeh31_2-%20HIW%20%281%29.png"
+            src="/hiw-2.png"
             alt="Step 2"
             className="w-full h-auto rounded-2xl shadow-2xl transition-all duration-300 group-hover:scale-105 group-hover:shadow-3xl group-hover:-rotate-1"
           />
@@ -82,7 +82,7 @@ const HowItWorks = () => {
         {/* Card 3 */}
         <div className="flex justify-center items-center group cursor-pointer">
           <img 
-            src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/a7fi2lsh_3-%20HIW%20%281%29.png"
+            src="/hiw-3.png"
             alt="Step 3"
             className="w-full h-auto rounded-2xl shadow-2xl transition-all duration-300 group-hover:scale-105 group-hover:shadow-3xl group-hover:rotate-1"
           />
@@ -102,7 +102,7 @@ const HowItWorks = () => {
         {/* Card 1 */}
         <div className="flex justify-center items-center active:scale-95 transition-transform duration-200">
           <img 
-            src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/zeguqh54_1-%20HIW%20%281%29.png"
+            src="/hiw-1.png"
             alt="Step 1"
             className="w-full h-auto rounded-2xl shadow-2xl"
           />
@@ -111,7 +111,7 @@ const HowItWorks = () => {
         {/* Card 2 */}
         <div className="flex justify-center items-center active:scale-95 transition-transform duration-200">
           <img 
-            src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/wwvzeh31_2-%20HIW%20%281%29.png"
+            src="/hiw-2.png"
             alt="Step 2"
             className="w-full h-auto rounded-2xl shadow-2xl"
           />
@@ -120,7 +120,7 @@ const HowItWorks = () => {
         {/* Card 3 */}
         <div className="flex justify-center items-center active:scale-95 transition-transform duration-200">
           <img 
-            src="https://customer-assets.emergentagent.com/job_2267f688-6c2c-4449-a687-79611e916621/artifacts/a7fi2lsh_3-%20HIW%20%281%29.png"
+            src="/hiw-3.png"
             alt="Step 3"
             className="w-full h-auto rounded-2xl shadow-2xl"
           />

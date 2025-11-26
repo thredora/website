@@ -6,6 +6,7 @@ import HowItWorks from './components/HowItWorks';
 import Footer from './components/Footer';
 import TermsAndConditions from './components/TermsAndConditions';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import PricingPage from './components/PricingPage';
 import './App.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             </div>
           } 
         />
+        <Route path="/pricing" element={<PricingPage />} />
         <Route path="/terms" element={<TermsAndConditions />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>

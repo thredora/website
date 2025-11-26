@@ -180,7 +180,7 @@ const PrivacyPolicy = () => {
               <li>Clarification on how your data is used</li>
             </ul>
             <p className="text-sm md:text-base mt-2">
-              Contact us at support@thredora.com.
+              Contact us at thredora.ai@gmail.com.
             </p>
           </div>
 
@@ -226,7 +226,7 @@ const PrivacyPolicy = () => {
               For privacy concerns, deletion requests, or questions:
             </p>
             <p className="text-sm md:text-base mt-1">
-              📩 support@thredora.com
+              📩 thredora.ai@gmail.com
             </p>
           </div>
         </div>

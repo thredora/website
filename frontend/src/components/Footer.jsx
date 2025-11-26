@@ -76,9 +76,6 @@ const Footer = () => {
 
         {/* Mobile Layout */}
         <div className="flex md:hidden flex-col gap-6">
-          {/* Semi-transparent white separator line */}
-          <div className="w-full h-px bg-white/30 -mt-2"></div>
-          
           {/* Top Row: Logo/Copyright (left) and Socials (right) */}
           <div className="flex flex-row justify-between items-end">
             {/* Left: Logo and Copyright stacked */}

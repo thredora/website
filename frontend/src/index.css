@@ -4,6 +4,8 @@
 
 /* Import Google Fonts - Libre Caslon Text */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+/* Import Google Fonts - Libre Baskerville (for Pricing page) */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 body {
     margin: 0;

@@ -238,7 +238,7 @@ const TermsAndConditions = () => {
               For questions, account issues, or deletion requests:
             </p>
             <p className="text-sm md:text-base mt-1">
-              📩 support@thredora.com
+              📩 thredora.ai@gmail.com
             </p>
           </div>
         </div>
