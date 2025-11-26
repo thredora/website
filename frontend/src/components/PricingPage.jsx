@@ -67,13 +67,15 @@ const PricingPage = () => {
               </div>
 
               {/* Join Waitlist CTA */}
-              <button
-                type="button"
+              <a
+                href="https://app.youform.com/forms/ywhblc6e"
+                 target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white text-purple-800 font-semibold px-6 py-3 md:px-8 md:py-3 rounded-full shadow-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 text-base md:text-lg text-center"
               >
                 Join Waitlist
-              </button>
-            </div>
+              </a>
+
           </div>
 
           {/* Bottom Back to Home */}
