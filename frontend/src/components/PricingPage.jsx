@@ -75,7 +75,7 @@ const PricingPage = () => {
               >
                 Join Waitlist
               </a>
-
+            </div>
           </div>
 
           {/* Bottom Back to Home */}
