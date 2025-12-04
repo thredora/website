@@ -226,7 +226,7 @@ const PrivacyPolicy = () => {
               For privacy concerns, deletion requests, or questions:
             </p>
             <p className="text-sm md:text-base mt-1">
-              📩 thredora.ai@gmail.com
+              📩 thread@thredora.com
             </p>
           </div>
         </div>
