@@ -179,7 +179,7 @@ const HowItWorks = () => {
               marginTop: '3rem',
               lineHeight: '1.6'
             }}>
-              Say hello to your new style bestie.
+              Say hello to your new style bestie!
             </p>
           </div>
         </div>
