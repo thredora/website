@@ -42,7 +42,7 @@ const PricingPage = () => {
 
               {/* Chat on WhatsApp CTA */}
               <a
-                href="https://wa.me/919353971270?text=Sup%20Thread!"
+                href="https://wa.me/919657293681?text=Sup%20Thread!"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#E9DE5F] text-black font-semibold px-6 py-3 md:px-8 md:py-3 rounded-full shadow-lg hover:bg-yellow-300 transition-all duration-300 hover:scale-105 text-base md:text-lg text-center"
