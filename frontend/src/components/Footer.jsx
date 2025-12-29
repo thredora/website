@@ -37,7 +37,7 @@ const Footer = () => {
               Privacy Policy
             </Link>
             <a 
-                href="mailto:thread@thredora.com?subject=Thredora%20-%20Support%20Request" 
+                href="mailto:thredora.ai@gmail.com?subject=Thredora%20-%20Support%20Request" 
                 className="text-white hover:text-gray-200 transition-colors duration-300 text-base cursor-pointer touch-manipulation"
                 style={{ fontFamily: 'Libre Caslon Text, serif' }}
               >
